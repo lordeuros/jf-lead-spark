@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import logo from "@/assets/digital-jf-logo.png";
 
 const WHATSAPP_URL = "https://wa.me/5532999999999?text=Olá! Gostaria de saber mais sobre os serviços da Digital JF.";
 
@@ -28,8 +29,11 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between py-4">
-        <a href="#inicio" className="text-2xl font-display font-bold tracking-tight text-primary-foreground">
-          Digital<span className="text-gold"> JF</span>
+        <a href="#inicio" className="flex items-center gap-3 text-primary-foreground">
+          <img src={logo} alt="Logo Digital JF" className="h-11 w-11 rounded-xl object-cover shadow-lg" loading="eager" />
+          <span className="text-xl font-display font-bold tracking-tight">
+            Digital<span className="text-gold"> JF</span>
+          </span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
@@ -37,7 +41,7 @@ const Header = () => {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-primary-foreground/80 hover:text-gold transition-colors duration-200"
+              className="text-sm font-medium text-primary-foreground/80 hover:text-gold-light transition-colors duration-200"
             >
               {item.label}
             </a>
@@ -49,7 +53,7 @@ const Header = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-primary transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
+            className="inline-flex items-center gap-2 rounded-full bg-gold px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
           >
             <MessageCircle className="h-4 w-4" />
             Fale no WhatsApp
@@ -73,7 +77,7 @@ const Header = () => {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="py-3 px-4 text-primary-foreground/80 hover:text-gold transition-colors rounded-lg hover:bg-primary-foreground/5"
+                className="py-3 px-4 text-primary-foreground/80 hover:text-gold-light transition-colors rounded-lg hover:bg-primary-foreground/5"
               >
                 {item.label}
               </a>
@@ -82,7 +86,7 @@ const Header = () => {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 mx-4 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-primary"
+              className="mt-2 mx-4 inline-flex items-center justify-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-primary-foreground"
             >
               <MessageCircle className="h-4 w-4" />
               Fale no WhatsApp
