@@ -1,6 +1,7 @@
 import {
   Activity,
   ArrowRight,
+  BadgeCheck,
   CalendarCheck,
   CheckCircle2,
   ClipboardPlus,
@@ -11,65 +12,137 @@ import {
   Search,
   ShieldCheck,
   Sparkles,
-  Stethoscope,
   Star,
+  Stethoscope,
+  TimerReset,
+  TrendingUp,
   Users,
 } from "lucide-react";
 import logo from "@/assets/digital-jf-logo.png";
+import doctorHero from "@/assets/doctor-hero.jpg";
 
 const WHATSAPP_URL =
-  "https://wa.me/5532999999999?text=Olá! Quero uma estratégia de marketing para minha clínica médica.";
+  "https://wa.me/5532999999999?text=Olá! Quero uma estratégia de marketing digital para minha clínica ou empresa da área da saúde.";
+
+const navItems = [
+  { label: "Soluções", href: "#solucoes" },
+  { label: "Especialidades", href: "#especialidades" },
+  { label: "Processo", href: "#processo" },
+  { label: "Resultados", href: "#resultados" },
+  { label: "Contato", href: "#contato-clinicas" },
+];
 
 const services = [
   {
     icon: Search,
-    title: "Google Ads para consultas",
+    title: "Google Ads para consultas e procedimentos",
     description:
-      "Campanhas pensadas para atrair pacientes com intenção real de agendamento na sua especialidade.",
-  },
-  {
-    icon: CalendarCheck,
-    title: "Captação via WhatsApp",
-    description:
-      "Fluxos de contato mais rápidos para transformar visitas em marcações com menos atrito.",
+      "Campanhas segmentadas para captar pacientes com intenção real de atendimento na sua especialidade.",
   },
   {
     icon: ClipboardPlus,
-    title: "Landing pages médicas",
+    title: "Sites e landing pages para saúde",
     description:
-      "Páginas claras, confiáveis e otimizadas para conversão, com foco em autoridade e agendamento.",
+      "Páginas profissionais com estrutura de confiança, autoridade médica e foco em conversão.",
+  },
+  {
+    icon: CalendarCheck,
+    title: "Captação e pré-triagem via WhatsApp",
+    description:
+      "Jornadas mais rápidas para transformar interesse em agendamento com menos perda de leads.",
   },
   {
     icon: MapPin,
-    title: "SEO local para clínicas",
+    title: "SEO local e Google Meu Negócio",
     description:
-      "Mais presença no Google para quem procura atendimento na sua região e na sua especialidade.",
+      "Presença forte nas buscas da sua região para consultas, exames, clínicas e especialidades.",
+  },
+  {
+    icon: Activity,
+    title: "Posicionamento e autoridade digital",
+    description:
+      "Comunicação profissional para reforçar credibilidade, percepção premium e diferenciação.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Otimização contínua de campanhas",
+    description:
+      "Análise, ajustes e evolução da operação para gerar mais pacientes qualificados com previsibilidade.",
   },
 ];
 
-const differentiators = [
-  "Estratégia voltada para clínicas e consultórios",
-  "Comunicação profissional e humanizada",
-  "Campanhas com foco em pacientes qualificados",
-  "Acompanhamento próximo e ajustes frequentes",
+const audiences = [
+  "Clínicas médicas multiespecialidades",
+  "Consultórios particulares",
+  "Centros de diagnóstico e exames",
+  "Clínicas odontológicas e estéticas",
+  "Empresas da área da saúde",
+  "Profissionais liberais da saúde",
+];
+
+const specialties = [
+  "Dermatologia",
+  "Ortopedia",
+  "Cardiologia",
+  "Ginecologia",
+  "Pediatria",
+  "Endocrinologia",
+  "Psiquiatria",
+  "Odontologia",
+];
+
+const pillars = [
+  {
+    icon: ShieldCheck,
+    title: "Percepção de confiança",
+    text: "Design, copy e estrutura pensados para transmitir segurança e profissionalismo desde o primeiro acesso.",
+  },
+  {
+    icon: Users,
+    title: "Pacientes mais qualificados",
+    text: "Atração segmentada para especialidades, serviços e regiões com maior potencial de conversão.",
+  },
+  {
+    icon: TimerReset,
+    title: "Resposta mais rápida",
+    text: "Fluxos via WhatsApp e páginas objetivas para reduzir atrito no contato e no agendamento.",
+  },
+  {
+    icon: BadgeCheck,
+    title: "Estratégia consistente",
+    text: "Planejamento, acompanhamento e otimização contínua para sustentar crescimento com mais previsibilidade.",
+  },
+];
+
+const processSteps = [
+  "Diagnóstico da presença digital atual da clínica ou operação de saúde",
+  "Definição de oferta, diferenciais, especialidades e público-alvo",
+  "Criação da página, campanhas e ativos de conversão",
+  "Integração com WhatsApp, formulários e rotina comercial",
+  "Otimização recorrente com base em dados e qualidade dos contatos",
 ];
 
 const numbers = [
-  { value: "+43%", label: "mais contatos qualificados" },
-  { value: "4.9★", label: "experiência percebida pelos clientes" },
-  { value: "24h", label: "tempo médio para otimização inicial" },
+  { value: "+43%", label: "mais contatos qualificados em projetos otimizados" },
+  { value: "4.9★", label: "percepção média de atendimento e confiança" },
+  { value: "24h", label: "prazo inicial para diagnóstico estratégico" },
 ];
 
 const testimonials = [
   {
     name: "Dra. Camila Andrade",
     role: "Clínica de Dermatologia",
-    text: "A nova estratégia aumentou muito a procura por consultas particulares e organizou melhor nosso atendimento pelo WhatsApp.",
+    text: "A página ficou muito mais profissional e os contatos passaram a chegar com mais contexto e intenção real de agendamento.",
   },
   {
     name: "Dr. Renato Moura",
     role: "Clínica Ortopédica",
-    text: "Finalmente começamos a receber contatos mais qualificados. A página transmite confiança e converte bem melhor.",
+    text: "Melhoramos a imagem da clínica no digital e passamos a receber pacientes mais alinhados com o nosso perfil de atendimento.",
+  },
+  {
+    name: "Centro Vitae Saúde",
+    role: "Clínica Multidisciplinar",
+    text: "A Digital JF organizou nossa captação com clareza. Hoje temos campanhas, landing page e WhatsApp trabalhando juntos.",
   },
 ];
 
@@ -77,7 +150,7 @@ const ClinicasMedicas = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-40 border-b border-border/60 bg-background/95 backdrop-blur-md">
-        <div className="container mx-auto flex items-center justify-between py-4">
+        <div className="container mx-auto flex items-center justify-between gap-6 py-4">
           <a href="/" className="flex items-center gap-3">
             <img
               src={logo}
@@ -89,10 +162,22 @@ const ClinicasMedicas = () => {
                 Digital JF
               </span>
               <span className="block text-xs uppercase tracking-[0.24em] text-gold">
-                Clínicas Médicas
+                Saúde & Clínicas
               </span>
             </div>
           </a>
+
+          <nav className="hidden items-center gap-6 lg:flex">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium text-foreground/70 transition-colors duration-200 hover:text-gold"
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
 
           <a
             href={WHATSAPP_URL}
@@ -108,20 +193,23 @@ const ClinicasMedicas = () => {
 
       <main>
         <section className="section-padding-lg overflow-hidden bg-background">
-          <div className="container mx-auto grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="container mx-auto grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-muted px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
+              <span className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
                 <HeartPulse className="h-4 w-4" />
-                Marketing especializado para clínicas
+                Marketing digital para clínicas e saúde
               </span>
-              <h1 className="mt-6 max-w-3xl text-4xl font-display font-bold leading-[1.06] text-primary sm:text-5xl lg:text-6xl">
-                Mais pacientes certos para sua clínica com uma presença digital
-                <span className="text-gold"> clara, confiável e estratégica</span>
+
+              <h1 className="mt-6 max-w-4xl text-4xl font-display font-bold leading-[1.04] text-primary sm:text-5xl lg:text-6xl xl:text-7xl">
+                Estratégias digitais para
+                <span className="text-gold"> clínicas, consultórios </span>
+                e serviços da área da saúde que precisam crescer com mais autoridade
               </h1>
+
               <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-                Criamos campanhas, páginas e jornadas de contato pensadas para
-                clínicas médicas que precisam gerar agendamentos com mais
-                previsibilidade e credibilidade.
+                A Digital JF cria páginas, campanhas e operações de captação para
+                negócios da saúde que desejam aumentar agendamentos, fortalecer a
+                marca e transmitir confiança em cada ponto de contato.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -135,73 +223,77 @@ const ClinicasMedicas = () => {
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
-                  href="#servicos-medicos"
+                  href="#solucoes"
                   className="inline-flex items-center justify-center rounded-full border border-border bg-card px-7 py-4 text-base font-semibold text-primary transition-colors duration-200 hover:border-gold hover:text-gold"
                 >
-                  Ver soluções
+                  Ver soluções para saúde
                 </a>
               </div>
 
-              <div className="mt-10 grid gap-4 sm:grid-cols-3">
+              <div className="mt-12 grid gap-4 sm:grid-cols-3">
                 {numbers.map((item) => (
-                  <div key={item.label} className="rounded-2xl border border-border/70 bg-card p-5 shadow-sm">
-                    <div className="text-3xl font-display font-bold text-gold">{item.value}</div>
-                    <p className="mt-2 text-sm leading-6 text-muted-foreground">{item.label}</p>
+                  <div
+                    key={item.label}
+                    className="rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm"
+                  >
+                    <div className="text-3xl font-display font-bold text-gold">
+                      {item.value}
+                    </div>
+                    <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                      {item.label}
+                    </p>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="relative">
-              <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-gold/10 via-transparent to-accent/10 blur-2xl" />
-              <div className="relative rounded-[2rem] border border-border/70 bg-card p-6 shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
-                <div className="rounded-[1.5rem] bg-primary p-8 text-primary-foreground">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="text-sm uppercase tracking-[0.24em] text-primary-foreground/60">
-                        Estrutura ideal
-                      </p>
-                      <h2 className="mt-2 text-2xl font-display font-semibold">
-                        Jornada de captação médica
-                      </h2>
-                    </div>
-                    <ShieldCheck className="h-10 w-10 text-gold" />
+              <div className="absolute -left-6 top-12 h-40 w-40 rounded-full bg-gold/10 blur-3xl" />
+              <div className="absolute -right-8 bottom-8 h-48 w-48 rounded-full bg-accent/10 blur-3xl" />
+
+              <div className="relative rounded-[2rem] border border-border/70 bg-card p-5 shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
+                <div className="grid gap-5 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
+                  <div className="overflow-hidden rounded-[1.5rem] bg-muted">
+                    <img
+                      src={doctorHero}
+                      alt="Médico profissional de braços cruzados"
+                      className="h-full w-full object-cover"
+                      loading="eager"
+                    />
                   </div>
 
-                  <div className="mt-8 space-y-4">
-                    {[
-                      "Anúncio com intenção de consulta",
-                      "Página com especialidade e prova social",
-                      "Contato rápido via WhatsApp ou formulário",
-                      "Acompanhamento e otimização semanal",
-                    ].map((step, index) => (
-                      <div
-                        key={step}
-                        className="flex items-center gap-4 rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-4"
-                      >
-                        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary">
-                          {index + 1}
-                        </div>
-                        <p className="text-sm leading-6 text-primary-foreground/85">{step}</p>
+                  <div className="rounded-[1.5rem] bg-primary p-7 text-primary-foreground">
+                    <div className="flex items-center justify-between gap-4">
+                      <div>
+                        <p className="text-sm uppercase tracking-[0.24em] text-primary-foreground/60">
+                          Posicionamento premium
+                        </p>
+                        <h2 className="mt-2 text-2xl font-display font-semibold leading-tight">
+                          Estrutura digital para gerar confiança e conversão
+                        </h2>
                       </div>
-                    ))}
-                  </div>
-                </div>
+                      <ShieldCheck className="h-10 w-10 flex-shrink-0 text-gold" />
+                    </div>
 
-                <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-2xl bg-muted p-5">
-                    <Stethoscope className="h-6 w-6 text-gold" />
-                    <p className="mt-3 text-sm font-semibold text-primary">Especialidades e subnichos</p>
-                    <p className="mt-1 text-sm leading-6 text-muted-foreground">
-                      Dermatologia, ortopedia, ginecologia, cardiologia e mais.
-                    </p>
-                  </div>
-                  <div className="rounded-2xl bg-muted p-5">
-                    <Users className="h-6 w-6 text-gold" />
-                    <p className="mt-3 text-sm font-semibold text-primary">Foco em confiança</p>
-                    <p className="mt-1 text-sm leading-6 text-muted-foreground">
-                      Comunicação pensada para transmitir segurança e autoridade.
-                    </p>
+                    <div className="mt-7 space-y-4">
+                      {[
+                        "Comunicação clara para pacientes particulares, convênios e procedimentos",
+                        "Páginas profissionais com foco em especialidades, credibilidade e contato rápido",
+                        "Captação integrada com WhatsApp e formulários para não perder oportunidades",
+                      ].map((item, index) => (
+                        <div
+                          key={item}
+                          className="flex items-start gap-4 rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-4"
+                        >
+                          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary">
+                            {index + 1}
+                          </div>
+                          <p className="text-sm leading-6 text-primary-foreground/85">
+                            {item}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -209,18 +301,50 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="servicos-medicos" className="section-padding bg-muted">
+        <section className="section-padding bg-muted">
           <div className="container mx-auto">
-            <div className="max-w-2xl">
+            <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+              <div>
+                <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
+                  Atuação ampliada
+                </span>
+                <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
+                  Soluções de marketing digital para clínicas e serviços da área da saúde
+                </h2>
+                <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
+                  Esta página foi desenhada para clínicas médicas, consultórios,
+                  centros especializados, operações odontológicas, estéticas e
+                  negócios de saúde que precisam crescer sem perder a imagem de
+                  excelência e seriedade.
+                </p>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                {audiences.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-[1.5rem] border border-border/70 bg-card p-5 text-sm font-medium text-foreground/85 shadow-sm"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="solucoes" className="section-padding bg-background">
+          <div className="container mx-auto">
+            <div className="max-w-3xl">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
-                Soluções para clínicas
+                Soluções estratégicas
               </span>
-              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl">
-                Estruturamos sua captação com foco em agenda cheia e percepção premium
+              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
+                Uma operação digital completa para atrair, converter e acompanhar pacientes
               </h2>
             </div>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {services.map((service) => (
                 <article
                   key={service.title}
@@ -241,56 +365,105 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-background">
-          <div className="container mx-auto grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <section id="especialidades" className="section-padding bg-muted">
+          <div className="container mx-auto grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
             <div className="rounded-[2rem] border border-border/70 bg-card p-8 shadow-sm">
               <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.24em] text-gold">
-                <Sparkles className="h-4 w-4" />
-                Diferenciais
+                <Stethoscope className="h-4 w-4" />
+                Especialidades e nichos
               </span>
-              <div className="mt-6 space-y-4">
-                {differentiators.map((item) => (
-                  <div key={item} className="flex items-start gap-3 rounded-2xl bg-muted p-4">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-gold" />
-                    <p className="text-sm leading-7 text-foreground/85">{item}</p>
-                  </div>
-                ))}
-              </div>
+              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl">
+                Comunicação adaptada para diferentes áreas da saúde
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-muted-foreground">
+                Cada especialidade exige linguagem, oferta e jornada de contato
+                diferentes. A estratégia precisa refletir isso para performar bem.
+              </p>
             </div>
 
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+              {specialties.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-[1.5rem] border border-gold/15 bg-background p-5 shadow-sm"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/10 text-gold">
+                      <CheckCircle2 className="h-5 w-5" />
+                    </div>
+                    <span className="font-medium text-primary">{item}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="processo" className="section-padding bg-background">
+          <div className="container mx-auto grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
             <div>
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
-                Pensado para saúde
+                Processo de trabalho
               </span>
               <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
-                Uma página que passa segurança antes mesmo do primeiro contato
+                Uma construção profissional do posicionamento à geração de demanda
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-                Para clínicas médicas, conversão não é só clique. É confiança,
-                clareza, autoridade e facilidade para marcar. Por isso, a página
-                precisa ser leve, elegante e objetiva — sem parecer genérica.
+                Mais do que anúncios, estruturamos uma jornada digital coerente
+                para clínicas e marcas da saúde que desejam previsibilidade e um
+                posicionamento mais forte no mercado.
               </p>
-              <div className="mt-8 flex items-center gap-3 rounded-2xl border border-gold/20 bg-gold/5 p-5 text-sm leading-7 text-foreground/85">
-                <Activity className="h-5 w-5 flex-shrink-0 text-gold" />
-                Estrutura recomendada para clínicas com atendimento particular,
-                convênios, especialidades e unidades locais.
-              </div>
+            </div>
+
+            <div className="space-y-4">
+              {processSteps.map((step, index) => (
+                <div
+                  key={step}
+                  className="flex items-start gap-4 rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm"
+                >
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary-foreground">
+                    {index + 1}
+                  </div>
+                  <p className="pt-1 text-sm leading-7 text-foreground/85">{step}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
         <section className="section-padding bg-muted">
+          <div className="container mx-auto grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {pillars.map((item) => (
+              <article
+                key={item.title}
+                className="rounded-[1.75rem] border border-border/70 bg-card p-7 shadow-sm"
+              >
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
+                  <item.icon className="h-6 w-6" />
+                </div>
+                <h3 className="mt-5 text-xl font-display font-semibold text-primary">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                  {item.text}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section id="resultados" className="section-padding bg-background">
           <div className="container mx-auto">
             <div className="max-w-2xl">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
                 Prova social
               </span>
               <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl">
-                Credibilidade que ajuda a converter mais
+                Uma apresentação mais profissional ajuda a converter melhor
               </h2>
             </div>
 
-            <div className="mt-12 grid gap-6 lg:grid-cols-2">
+            <div className="mt-12 grid gap-6 lg:grid-cols-3">
               {testimonials.map((item) => (
                 <article
                   key={item.name}
@@ -314,18 +487,19 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding-lg bg-background">
+        <section id="contato-clinicas" className="section-padding-lg bg-background">
           <div className="container mx-auto">
             <div className="rounded-[2rem] border border-gold/20 bg-primary px-8 py-12 text-center text-primary-foreground shadow-[0_24px_80px_-32px_hsla(var(--primary),0.35)] sm:px-12">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold-light">
                 Próximo passo
               </span>
               <h2 className="mt-4 text-3xl font-display font-bold sm:text-4xl lg:text-5xl">
-                Quer uma página e estratégia feitas para clínica médica?
+                Quer uma página e uma estratégia profissional para sua clínica ou negócio da saúde?
               </h2>
-              <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-primary-foreground/70">
+              <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-primary-foreground/70">
                 Fale com a Digital JF e receba uma direção inicial para aumentar
-                seus agendamentos com mais consistência.
+                seus agendamentos, fortalecer sua presença digital e melhorar a
+                qualidade dos contatos que chegam até sua equipe.
               </p>
               <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
                 <a
