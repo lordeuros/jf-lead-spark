@@ -9,6 +9,7 @@ const navItems = [
   { label: "Serviços", href: "#servicos" },
   { label: "Sobre", href: "#sobre" },
   { label: "Portfólio", href: "#portfolio" },
+  { label: "Clínicas", href: "/clinicas-medicas" },
   { label: "Contato", href: "#contato" },
 ];
 
