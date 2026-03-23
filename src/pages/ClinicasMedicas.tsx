@@ -155,7 +155,7 @@ const ClinicasMedicas = () => {
             <img
               src={logo}
               alt="Logo Avelon Med"
-              className="h-12 w-auto object-contain" />
+              className="h-14 w-14 rounded-full object-cover shadow-md" />
             
             <div>
               <span className="block text-lg font-display font-bold text-primary">
