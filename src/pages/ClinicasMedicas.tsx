@@ -192,7 +192,7 @@ const ClinicasMedicas = () => {
       </header>
 
       <main>
-        <section className="section-padding-lg overflow-hidden bg-background">
+        <section className="pt-8 pb-16 md:pt-12 md:pb-24 overflow-hidden bg-background">
           <div className="container mx-auto grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
