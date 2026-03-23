@@ -18,7 +18,7 @@ import {
   TrendingUp,
   Users } from
 "lucide-react";
-import logo from "@/assets/digital-jf-logo.png";
+import logo from "@/assets/avelon-med-logo.png";
 import doctorHero from "@/assets/doctor-hero.jpg";
 
 const WHATSAPP_URL =
@@ -142,7 +142,7 @@ const testimonials = [
 {
   name: "Centro Vitae Saúde",
   role: "Clínica Multidisciplinar",
-  text: "A Digital JF organizou nossa captação com clareza. Hoje temos campanhas, landing page e WhatsApp trabalhando juntos."
+  text: "A Avelon Med organizou nossa captação com clareza. Hoje temos campanhas, landing page e WhatsApp trabalhando juntos."
 }];
 
 
@@ -154,15 +154,15 @@ const ClinicasMedicas = () => {
           <a href="/" className="flex items-center gap-3">
             <img
               src={logo}
-              alt="Logo Digital JF"
-              className="h-11 w-11 rounded-xl object-cover shadow-md" />
+              alt="Logo Avelon Med"
+              className="h-12 w-auto object-contain" />
             
             <div>
               <span className="block text-lg font-display font-bold text-primary">
-                Digital JF
+                Avelon Med
               </span>
               <span className="block text-xs uppercase tracking-[0.24em] text-gold">
-                Saúde & Clínicas
+                Marketing Médico
               </span>
             </div>
           </a>
@@ -205,7 +205,7 @@ const ClinicasMedicas = () => {
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-                A Digital JF cria páginas, campanhas e operações de captação para
+                A Avelon Med cria páginas, campanhas e operações de captação para
                 negócios da saúde que desejam aumentar agendamentos, fortalecer a
                 marca e transmitir confiança em cada ponto de contato.
               </p>
@@ -457,7 +457,7 @@ const ClinicasMedicas = () => {
 
               </h2>
               <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-primary-foreground/70">
-                Fale com a Digital JF e receba uma direção inicial para aumentar
+                Fale com a Avelon Med e receba uma direção inicial para aumentar
                 seus agendamentos, fortalecer sua presença digital e melhorar a
                 qualidade dos contatos que chegam até sua equipe.
               </p>
