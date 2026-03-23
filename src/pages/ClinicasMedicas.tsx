@@ -192,7 +192,7 @@ const ClinicasMedicas = () => {
       </header>
 
       <main>
-        <section className="section-padding-lg overflow-hidden bg-background">
+        <section className="pt-8 pb-16 md:pt-12 md:pb-24 overflow-hidden bg-background">
           <div className="container mx-auto grid items-center gap-14 lg:grid-cols-[1.05fr_0.95fr]">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
@@ -200,8 +200,8 @@ const ClinicasMedicas = () => {
                 Marketing digital para clínicas e saúde
               </span>
 
-              <h1 className="mt-6 max-w-4xl text-4xl font-display font-bold leading-[1.04] text-primary sm:text-5xl lg:text-6xl xl:text-7xl">Estratégias digitais para clínicas e consultórios que precisam crescer com mais autoridade
-
+              <h1 className="mt-6 max-w-4xl text-4xl font-display font-bold leading-[1.04] text-primary sm:text-5xl lg:text-6xl xl:text-7xl">
+                Estratégias digitais para
                 <span className="text-gold"> clínicas, consultórios </span>
                 e serviços da área da saúde que precisam crescer com mais autoridade
               </h1>
@@ -251,51 +251,13 @@ const ClinicasMedicas = () => {
               <div className="absolute -left-6 top-12 h-40 w-40 rounded-full bg-gold/10 blur-3xl" />
               <div className="absolute -right-8 bottom-8 h-48 w-48 rounded-full bg-accent/10 blur-3xl" />
 
-              <div className="relative rounded-[2rem] border border-border/70 bg-card p-5 shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
-                <div className="grid gap-5 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
-                  <div className="overflow-hidden rounded-[1.5rem] bg-muted">
-                    <img
-                      src={doctorHero}
-                      alt="Médico profissional de braços cruzados"
-                      className="h-full w-full object-cover"
-                      loading="eager" />
-                    
-                  </div>
-
-                  <div className="rounded-[1.5rem] bg-primary p-7 text-primary-foreground">
-                    <div className="flex items-center justify-between gap-4">
-                      <div>
-                        <p className="text-sm uppercase tracking-[0.24em] text-primary-foreground/60">
-                          Posicionamento premium
-                        </p>
-                        <h2 className="mt-2 text-2xl font-display font-semibold leading-tight">
-                          Estrutura digital para gerar confiança e conversão
-                        </h2>
-                      </div>
-                      <ShieldCheck className="h-10 w-10 flex-shrink-0 text-gold" />
-                    </div>
-
-                    <div className="mt-7 space-y-4">
-                      {[
-                      "Comunicação clara para pacientes particulares, convênios e procedimentos",
-                      "Páginas profissionais com foco em especialidades, credibilidade e contato rápido",
-                      "Captação integrada com WhatsApp e formulários para não perder oportunidades"].
-                      map((item, index) =>
-                      <div
-                        key={item}
-                        className="flex items-start gap-4 rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-4">
-                        
-                          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary">
-                            {index + 1}
-                          </div>
-                          <p className="text-sm leading-6 text-primary-foreground/85">
-                            {item}
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
+              <div className="relative rounded-[2rem] border border-border/70 bg-card overflow-hidden shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
+                <img
+                  src={doctorHero}
+                  alt="Médico profissional de braços cruzados"
+                  className="w-full h-auto object-cover"
+                  loading="eager"
+                />
               </div>
             </div>
           </div>
