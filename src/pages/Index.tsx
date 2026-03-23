@@ -9,12 +9,14 @@ import CTASection from "@/components/CTASection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import PartnersCarousel from "@/components/PartnersCarousel";
 
 const Index = () => (
   <>
     <Header />
     <main>
       <HeroSection />
+      <PartnersCarousel />
       <ServicesSection />
       <BenefitsSection />
       <AboutSection />

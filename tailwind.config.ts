@@ -98,6 +98,7 @@ export default {
         "fade-in": "fade-in 0.6s ease-out forwards",
         "slide-left": "slide-left 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards",
         "pulse-gold": "pulse-gold 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+        "scroll-left": "scroll-left 30s linear infinite",
       },
     },
   },

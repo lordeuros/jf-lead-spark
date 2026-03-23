@@ -20,6 +20,7 @@ import {
 "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
 import doctorHero from "@/assets/doctor-hero.jpg";
+import PartnersCarousel from "@/components/PartnersCarousel";
 
 const WHATSAPP_URL =
 "https://wa.me/5532999999999?text=Olá! Quero uma estratégia de marketing digital para minha clínica ou empresa da área da saúde.";
