@@ -200,8 +200,8 @@ const ClinicasMedicas = () => {
                 Marketing digital para clínicas e saúde
               </span>
 
-              <h1 className="mt-6 max-w-4xl text-4xl font-display font-bold leading-[1.04] text-primary sm:text-5xl lg:text-6xl xl:text-7xl">
-                Estratégias digitais para
+              <h1 className="mt-6 max-w-4xl text-4xl font-display font-bold leading-[1.04] text-primary sm:text-5xl lg:text-6xl xl:text-7xl">Estratégias digitais para Médicos e serviços da área de saúde que precisam crescer com mais autoridade
+
                 <span className="text-gold"> clínicas, consultórios </span>
                 e serviços da área da saúde que precisam crescer com mais autoridade
               </h1>
@@ -256,8 +256,8 @@ const ClinicasMedicas = () => {
                   src={doctorHero}
                   alt="Médico profissional de braços cruzados"
                   className="w-full h-auto object-cover"
-                  loading="eager"
-                />
+                  loading="eager" />
+                
               </div>
             </div>
           </div>
