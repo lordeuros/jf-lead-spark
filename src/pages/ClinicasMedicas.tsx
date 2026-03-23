@@ -251,13 +251,11 @@ const ClinicasMedicas = () => {
               <div className="absolute -left-6 top-12 h-40 w-40 rounded-full bg-gold/10 blur-3xl" />
               <div className="absolute -right-8 bottom-8 h-48 w-48 rounded-full bg-accent/10 blur-3xl" />
 
-              <div className="relative rounded-[2rem] border border-border/70 bg-card p-5 shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
-                <div className="grid gap-5 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
-                  <div className="overflow-hidden rounded-[1.5rem] bg-muted">
+              <div className="relative rounded-[2rem] border border-border/70 bg-card overflow-hidden shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
                     <img
                       src={doctorHero}
                       alt="Médico profissional de braços cruzados"
-                      className="h-full w-full object-cover"
+                      className="w-full h-auto object-cover rounded-[2rem]"
                       loading="eager" />
                     
                   </div>
