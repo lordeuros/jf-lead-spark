@@ -252,48 +252,12 @@ const ClinicasMedicas = () => {
               <div className="absolute -right-8 bottom-8 h-48 w-48 rounded-full bg-accent/10 blur-3xl" />
 
               <div className="relative rounded-[2rem] border border-border/70 bg-card overflow-hidden shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
-                    <img
-                      src={doctorHero}
-                      alt="Médico profissional de braços cruzados"
-                      className="w-full h-auto object-cover rounded-[2rem]"
-                      loading="eager" />
-                    
-                  </div>
-
-                  <div className="rounded-[1.5rem] bg-primary p-7 text-primary-foreground">
-                    <div className="flex items-center justify-between gap-4">
-                      <div>
-                        <p className="text-sm uppercase tracking-[0.24em] text-primary-foreground/60">
-                          Posicionamento premium
-                        </p>
-                        <h2 className="mt-2 text-2xl font-display font-semibold leading-tight">
-                          Estrutura digital para gerar confiança e conversão
-                        </h2>
-                      </div>
-                      <ShieldCheck className="h-10 w-10 flex-shrink-0 text-gold" />
-                    </div>
-
-                    <div className="mt-7 space-y-4">
-                      {[
-                      "Comunicação clara para pacientes particulares, convênios e procedimentos",
-                      "Páginas profissionais com foco em especialidades, credibilidade e contato rápido",
-                      "Captação integrada com WhatsApp e formulários para não perder oportunidades"].
-                      map((item, index) =>
-                      <div
-                        key={item}
-                        className="flex items-start gap-4 rounded-2xl border border-primary-foreground/10 bg-primary-foreground/5 p-4">
-                        
-                          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary">
-                            {index + 1}
-                          </div>
-                          <p className="text-sm leading-6 text-primary-foreground/85">
-                            {item}
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
+                <img
+                  src={doctorHero}
+                  alt="Médico profissional de braços cruzados"
+                  className="w-full h-auto object-cover"
+                  loading="eager"
+                />
               </div>
             </div>
           </div>
