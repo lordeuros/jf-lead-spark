@@ -413,6 +413,8 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
+        <PartnersCarousel variant="medical" />
+
         <section id="resultados" className="section-padding bg-background">
           <div className="container mx-auto">
             <div className="max-w-2xl">
