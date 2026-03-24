@@ -270,7 +270,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-primary text-primary-foreground">
+        <section className="py-10 md:py-14 bg-primary text-primary-foreground">
           <div className="container mx-auto">
             <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
