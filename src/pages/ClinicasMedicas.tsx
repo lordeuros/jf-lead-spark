@@ -392,7 +392,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-muted">
+        <section className="section-padding bg-primary text-primary-foreground">
           <div className="container mx-auto grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {pillars.map((item) =>
             <article
