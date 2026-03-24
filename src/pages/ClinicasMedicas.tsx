@@ -20,7 +20,12 @@ import {
 "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
 import doctorHero from "@/assets/doctor-hero.jpg";
-import PartnersCarousel from "@/components/PartnersCarousel";
+import partnerHomeAngels from "@/assets/partner-homeangels.png";
+import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
+import partnerOdontoplus from "@/assets/partner-odontoplus.png";
+import partnerImoveisPrime from "@/assets/partner-imoveis-prime.png";
+import partnerStudioFit from "@/assets/partner-studio-fit.png";
+import partnerAdvocaciaMendes from "@/assets/partner-advocacia-mendes.png";
 
 const WHATSAPP_URL =
 "https://wa.me/5532999999999?text=Olá! Quero uma estratégia de marketing digital para minha clínica ou empresa da área da saúde.";
