@@ -328,7 +328,7 @@ const ClinicasMedicas = () => {
 
         <section id="especialidades" className="section-padding bg-primary text-primary-foreground">
           <div className="container mx-auto grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
-            <div className="rounded-[2rem] border border-border/70 bg-card p-8 shadow-sm">
+            <div className="rounded-[2rem] border border-primary-foreground/15 bg-primary-foreground/10 p-8 shadow-sm">
               <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.24em] text-gold">
                 <Stethoscope className="h-4 w-4" />
                 Especialidades e nichos
