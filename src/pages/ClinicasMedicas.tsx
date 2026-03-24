@@ -431,28 +431,34 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-primary text-primary-foreground">
-          <div className="container mx-auto">
-            <p className="text-center text-sm font-semibold uppercase tracking-[0.24em] text-gold mb-10">
+        <section className="py-10 md:py-14 bg-primary text-primary-foreground overflow-hidden">
+          <div className="container mx-auto mb-8">
+            <h2 className="text-center text-2xl font-display font-bold text-primary-foreground sm:text-3xl">
               Empresas que confiam em nós
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
-              {[
-                { name: "Home Angels", logo: partnerHomeAngels },
-                { name: "Clínica Vida", logo: partnerClinicaVida },
-                { name: "OdontoPlus", logo: partnerOdontoplus },
-                { name: "Imóveis Prime", logo: partnerImoveisPrime },
-                { name: "Studio Fit", logo: partnerStudioFit },
-                { name: "Advocacia Mendes", logo: partnerAdvocaciaMendes },
-              ].map((partner) => (
-                <img
-                  key={partner.name}
-                  src={partner.logo}
-                  alt={partner.name}
-                  loading="lazy"
-                  className="h-16 w-auto max-w-[180px] object-contain opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
-                />
-              ))}
+            </h2>
+          </div>
+          <div className="relative">
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-primary to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-primary to-transparent" />
+            <div className="flex animate-scroll-left items-center" style={{ width: 'max-content' }}>
+              {[...Array(4)].flatMap((_, setIndex) =>
+                [
+                  { name: "Home Angels", logo: partnerHomeAngels },
+                  { name: "Clínica Vida", logo: partnerClinicaVida },
+                  { name: "OdontoPlus", logo: partnerOdontoplus },
+                  { name: "Imóveis Prime", logo: partnerImoveisPrime },
+                  { name: "Studio Fit", logo: partnerStudioFit },
+                  { name: "Advocacia Mendes", logo: partnerAdvocaciaMendes },
+                ].map((partner, i) => (
+                  <img
+                    key={`${setIndex}-${i}`}
+                    src={partner.logo}
+                    alt={partner.name}
+                    loading="lazy"
+                    className="h-20 w-auto max-w-[200px] object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 mx-10"
+                  />
+                ))
+              )}
             </div>
           </div>
         </section>
