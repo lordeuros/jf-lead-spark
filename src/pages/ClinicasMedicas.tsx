@@ -333,7 +333,7 @@ const ClinicasMedicas = () => {
                 <Stethoscope className="h-4 w-4" />
                 Especialidades e nichos
               </span>
-              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl">
                 Comunicação adaptada para diferentes áreas da saúde
               </h2>
               <p className="mt-5 text-lg leading-8 text-muted-foreground">
