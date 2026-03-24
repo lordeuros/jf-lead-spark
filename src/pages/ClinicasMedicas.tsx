@@ -397,7 +397,7 @@ const ClinicasMedicas = () => {
             {pillars.map((item) =>
             <article
               key={item.title}
-              className="rounded-[1.75rem] border border-border/70 bg-card p-7 shadow-sm">
+              className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-7 shadow-sm">
               
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
                   <item.icon className="h-6 w-6" />
