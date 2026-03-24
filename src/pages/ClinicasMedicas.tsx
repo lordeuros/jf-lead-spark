@@ -402,7 +402,7 @@ const ClinicasMedicas = () => {
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
                   <item.icon className="h-6 w-6" />
                 </div>
-                <h3 className="mt-5 text-xl font-display font-semibold text-primary">
+                <h3 className="mt-5 text-xl font-display font-semibold text-primary-foreground">
                   {item.title}
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-muted-foreground">
