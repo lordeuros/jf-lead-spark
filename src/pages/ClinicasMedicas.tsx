@@ -498,7 +498,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="contato-clinicas" className="section-padding-lg bg-background">
+        <section id="contato-clinicas" className="py-12 md:py-16 bg-background">
           <div className="container mx-auto">
             <div className="rounded-[2rem] border border-gold/20 bg-primary px-8 py-12 text-center text-primary-foreground shadow-[0_24px_80px_-32px_hsla(var(--primary),0.35)] sm:px-12">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold-light">
