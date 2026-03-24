@@ -302,7 +302,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="solucoes" className="section-padding bg-background">
+        <section id="solucoes" className="py-10 md:py-14 bg-background">
           <div className="container mx-auto">
             <div className="max-w-3xl">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
