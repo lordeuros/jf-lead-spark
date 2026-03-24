@@ -400,24 +400,34 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-primary text-primary-foreground">
-          <div className="container mx-auto grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {pillars.map((item) =>
-            <article
-              key={item.title}
-              className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-7 shadow-sm">
-              
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
-                  <item.icon className="h-6 w-6" />
-                </div>
-                <h3 className="mt-5 text-xl font-display font-semibold text-primary-foreground">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-primary-foreground/70">
-                  {item.text}
-                </p>
-              </article>
-            )}
+        <section className="py-10 md:py-14 bg-primary text-primary-foreground">
+          <div className="container mx-auto">
+            <div className="text-center mb-8">
+              <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
+                Nossos pilares
+              </span>
+              <h2 className="mt-3 text-3xl font-display font-bold text-primary-foreground sm:text-4xl">
+                Por que clínicas escolhem a Avelon Med
+              </h2>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+              {pillars.map((item) =>
+              <article
+                key={item.title}
+                className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-7 shadow-sm">
+                
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
+                    <item.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="mt-5 text-xl font-display font-semibold text-primary-foreground">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-primary-foreground/80">
+                    {item.text}
+                  </p>
+                </article>
+              )}
+            </div>
           </div>
         </section>
 
