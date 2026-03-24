@@ -326,7 +326,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="especialidades" className="section-padding bg-muted">
+        <section id="especialidades" className="section-padding bg-primary text-primary-foreground">
           <div className="container mx-auto grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
             <div className="rounded-[2rem] border border-border/70 bg-card p-8 shadow-sm">
               <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.24em] text-gold">
