@@ -269,7 +269,7 @@ const ClinicasMedicas = () => {
                 <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
                   Atuação ampliada
                 </span>
-                <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
+                <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
                   Soluções de marketing digital para clínicas e serviços da área da saúde
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
