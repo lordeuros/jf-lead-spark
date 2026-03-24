@@ -352,7 +352,7 @@ const ClinicasMedicas = () => {
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/10 text-gold">
                       <CheckCircle2 className="h-5 w-5" />
                     </div>
-                    <span className="font-medium text-primary">{item}</span>
+                    <span className="font-medium text-primary-foreground">{item}</span>
                   </div>
                 </div>
               )}
