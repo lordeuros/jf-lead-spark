@@ -463,7 +463,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="resultados" className="section-padding bg-background">
+        <section id="resultados" className="py-10 md:py-14 bg-background">
           <div className="container mx-auto">
             <div className="max-w-2xl">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
