@@ -270,7 +270,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-primary text-primary-foreground">
+        <section className="py-10 md:py-14 bg-primary text-primary-foreground">
           <div className="container mx-auto">
             <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
@@ -280,7 +280,7 @@ const ClinicasMedicas = () => {
                 <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
                   Soluções de marketing digital para clínicas e serviços da área da saúde
                 </h2>
-                <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
+                <p className="mt-5 max-w-2xl text-lg leading-8 text-primary-foreground/80">
                   Esta página foi desenhada para clínicas médicas, consultórios,
                   centros especializados, operações odontológicas, estéticas e
                   negócios de saúde que precisam crescer sem perder a imagem de
@@ -302,7 +302,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="solucoes" className="section-padding bg-background">
+        <section id="solucoes" className="py-10 md:py-14 bg-background">
           <div className="container mx-auto">
             <div className="max-w-3xl">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
@@ -334,7 +334,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="especialidades" className="section-padding bg-primary text-primary-foreground">
+        <section id="especialidades" className="py-10 md:py-14 bg-primary text-primary-foreground">
           <div className="container mx-auto grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
             <div className="rounded-[2rem] border border-primary-foreground/15 bg-primary-foreground/10 p-8 shadow-sm">
               <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.24em] text-gold">
@@ -354,10 +354,10 @@ const ClinicasMedicas = () => {
               {specialties.map((item) =>
               <div
                 key={item}
-                className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 shadow-sm">
+                className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 shadow-sm flex items-center">
                 
                   <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/10 text-gold">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
                       <CheckCircle2 className="h-5 w-5" />
                     </div>
                     <span className="font-medium text-primary-foreground">{item}</span>
@@ -368,7 +368,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="processo" className="section-padding bg-background">
+        <section id="processo" className="py-10 md:py-14 bg-background">
           <div className="container mx-auto grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
             <div>
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
@@ -400,54 +400,70 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-primary text-primary-foreground">
-          <div className="container mx-auto grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {pillars.map((item) =>
-            <article
-              key={item.title}
-              className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-7 shadow-sm">
-              
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
-                  <item.icon className="h-6 w-6" />
-                </div>
-                <h3 className="mt-5 text-xl font-display font-semibold text-primary-foreground">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-primary-foreground/70">
-                  {item.text}
-                </p>
-              </article>
-            )}
-          </div>
-        </section>
-
-        <section className="section-padding bg-primary text-primary-foreground">
+        <section className="py-10 md:py-14 bg-primary text-primary-foreground">
           <div className="container mx-auto">
-            <p className="text-center text-sm font-semibold uppercase tracking-[0.24em] text-gold mb-10">
-              Empresas que confiam em nós
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
-              {[
-                { name: "Home Angels", logo: partnerHomeAngels },
-                { name: "Clínica Vida", logo: partnerClinicaVida },
-                { name: "OdontoPlus", logo: partnerOdontoplus },
-                { name: "Imóveis Prime", logo: partnerImoveisPrime },
-                { name: "Studio Fit", logo: partnerStudioFit },
-                { name: "Advocacia Mendes", logo: partnerAdvocaciaMendes },
-              ].map((partner) => (
-                <img
-                  key={partner.name}
-                  src={partner.logo}
-                  alt={partner.name}
-                  loading="lazy"
-                  className="h-16 w-auto max-w-[180px] object-contain opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
-                />
-              ))}
+            <div className="text-center mb-8">
+              <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
+                Nossos pilares
+              </span>
+              <h2 className="mt-3 text-3xl font-display font-bold text-primary-foreground sm:text-4xl">
+                Por que clínicas escolhem a Avelon Med
+              </h2>
+            </div>
+            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+              {pillars.map((item) =>
+              <article
+                key={item.title}
+                className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-7 shadow-sm">
+                
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
+                    <item.icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="mt-5 text-xl font-display font-semibold text-primary-foreground">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-primary-foreground/80">
+                    {item.text}
+                  </p>
+                </article>
+              )}
             </div>
           </div>
         </section>
 
-        <section id="resultados" className="section-padding bg-background">
+        <section className="py-10 md:py-14 bg-primary text-primary-foreground overflow-hidden">
+          <div className="container mx-auto mb-8">
+            <h2 className="text-center text-2xl font-display font-bold text-primary-foreground sm:text-3xl">
+              Empresas que confiam em nós
+            </h2>
+          </div>
+          <div className="relative">
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-primary to-transparent" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-primary to-transparent" />
+            <div className="flex animate-scroll-left items-center" style={{ width: 'max-content' }}>
+              {[...Array(4)].flatMap((_, setIndex) =>
+                [
+                  { name: "Home Angels", logo: partnerHomeAngels },
+                  { name: "Clínica Vida", logo: partnerClinicaVida },
+                  { name: "OdontoPlus", logo: partnerOdontoplus },
+                  { name: "Imóveis Prime", logo: partnerImoveisPrime },
+                  { name: "Studio Fit", logo: partnerStudioFit },
+                  { name: "Advocacia Mendes", logo: partnerAdvocaciaMendes },
+                ].map((partner, i) => (
+                  <img
+                    key={`${setIndex}-${i}`}
+                    src={partner.logo}
+                    alt={partner.name}
+                    loading="lazy"
+                    className="h-20 w-auto max-w-[200px] object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 mx-10"
+                  />
+                ))
+              )}
+            </div>
+          </div>
+        </section>
+
+        <section id="resultados" className="py-10 md:py-14 bg-background">
           <div className="container mx-auto">
             <div className="max-w-2xl">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
@@ -482,7 +498,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="contato-clinicas" className="section-padding-lg bg-background">
+        <section id="contato-clinicas" className="py-12 md:py-16 bg-background">
           <div className="container mx-auto">
             <div className="rounded-[2rem] border border-gold/20 bg-primary px-8 py-12 text-center text-primary-foreground shadow-[0_24px_80px_-32px_hsla(var(--primary),0.35)] sm:px-12">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold-light">
