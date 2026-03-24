@@ -5,7 +5,10 @@ import {
   CalendarCheck,
   CheckCircle2,
   ClipboardPlus,
+  Facebook,
   HeartPulse,
+  Instagram,
+  Linkedin,
   MapPin,
   MessageCircle,
   PhoneCall,
@@ -20,7 +23,12 @@ import {
 "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
 import doctorHero from "@/assets/doctor-hero.jpg";
-import PartnersCarousel from "@/components/PartnersCarousel";
+import partnerHomeAngels from "@/assets/partner-homeangels.png";
+import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
+import partnerOdontoplus from "@/assets/partner-odontoplus.png";
+import partnerImoveisPrime from "@/assets/partner-imoveis-prime.png";
+import partnerStudioFit from "@/assets/partner-studio-fit.png";
+import partnerAdvocaciaMendes from "@/assets/partner-advocacia-mendes.png";
 
 const WHATSAPP_URL =
 "https://wa.me/5532999999999?text=Olá! Quero uma estratégia de marketing digital para minha clínica ou empresa da área da saúde.";
@@ -413,7 +421,31 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <PartnersCarousel variant="medical" />
+        <section className="section-padding bg-primary text-primary-foreground">
+          <div className="container mx-auto">
+            <p className="text-center text-sm font-semibold uppercase tracking-[0.24em] text-gold mb-10">
+              Empresas que confiam em nós
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
+              {[
+                { name: "Home Angels", logo: partnerHomeAngels },
+                { name: "Clínica Vida", logo: partnerClinicaVida },
+                { name: "OdontoPlus", logo: partnerOdontoplus },
+                { name: "Imóveis Prime", logo: partnerImoveisPrime },
+                { name: "Studio Fit", logo: partnerStudioFit },
+                { name: "Advocacia Mendes", logo: partnerAdvocaciaMendes },
+              ].map((partner) => (
+                <img
+                  key={partner.name}
+                  src={partner.logo}
+                  alt={partner.name}
+                  loading="lazy"
+                  className="h-16 w-auto max-w-[180px] object-contain opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+                />
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section id="resultados" className="section-padding bg-background">
           <div className="container mx-auto">
@@ -488,14 +520,53 @@ const ClinicasMedicas = () => {
 
       <footer className="bg-primary border-t border-primary-foreground/10 py-12 px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <a href="/clinicas-medicas" className="flex items-center gap-3 text-primary-foreground">
-              <img src={logo} alt="Logo Avelon Med" className="h-12 w-12 rounded-full object-cover shadow-lg" loading="lazy" />
-              <div>
-                <span className="block text-lg font-display font-bold">Avelon Med</span>
-                <span className="block text-xs uppercase tracking-[0.24em] text-gold">Marketing Médico</span>
+          <div className="flex flex-col md:flex-row items-start justify-between gap-10">
+            <div className="flex flex-col gap-4">
+              <a href="/clinicas-medicas" className="flex items-center gap-3 text-primary-foreground">
+                <img src={logo} alt="Logo Avelon Med" className="h-12 w-12 rounded-full object-cover shadow-lg" loading="lazy" />
+                <div>
+                  <span className="block text-lg font-display font-bold">Avelon Med</span>
+                  <span className="block text-xs uppercase tracking-[0.24em] text-gold">Marketing Médico</span>
+                </div>
+              </a>
+              <p className="text-primary-foreground/40 text-sm max-w-xs">
+                Estratégias digitais para clínicas e serviços da área da saúde.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <span className="text-sm font-semibold uppercase tracking-wider text-gold">Links</span>
+              {navItems.map((item) => (
+                <a key={item.href} href={item.href} className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
+                  {item.label}
+                </a>
+              ))}
+              <a href="/" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
+                Site principal
+              </a>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <span className="text-sm font-semibold uppercase tracking-wider text-gold">Redes sociais</span>
+              <div className="flex items-center gap-3">
+                <a href="#" aria-label="Instagram" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-gold hover:text-primary-foreground transition-all duration-200">
+                  <Instagram className="h-4 w-4" />
+                </a>
+                <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-gold hover:text-primary-foreground transition-all duration-200">
+                  <Facebook className="h-4 w-4" />
+                </a>
+                <a href="#" aria-label="LinkedIn" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-gold hover:text-primary-foreground transition-all duration-200">
+                  <Linkedin className="h-4 w-4" />
+                </a>
               </div>
-            </a>
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
+                <MessageCircle className="h-4 w-4" />
+                WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-10 border-t border-primary-foreground/10 pt-6 text-center">
             <p className="text-primary-foreground/40 text-sm">
               © {new Date().getFullYear()} Avelon Med. Todos os direitos reservados.
             </p>
