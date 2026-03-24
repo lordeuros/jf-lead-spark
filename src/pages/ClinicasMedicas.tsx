@@ -284,7 +284,7 @@ const ClinicasMedicas = () => {
                 {audiences.map((item) =>
                 <div
                   key={item}
-                  className="rounded-[1.5rem] border border-border/70 bg-card p-5 text-sm font-medium text-foreground/85 shadow-sm">
+                  className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 text-sm font-medium text-primary-foreground/85 shadow-sm">
                   
                     {item}
                   </div>
