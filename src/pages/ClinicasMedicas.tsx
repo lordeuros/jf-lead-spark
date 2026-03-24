@@ -368,7 +368,7 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="processo" className="section-padding bg-background">
+        <section id="processo" className="py-10 md:py-14 bg-background">
           <div className="container mx-auto grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
             <div>
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
