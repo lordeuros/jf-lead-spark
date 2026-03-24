@@ -280,7 +280,7 @@ const ClinicasMedicas = () => {
                 <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
                   Soluções de marketing digital para clínicas e serviços da área da saúde
                 </h2>
-                <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
+                <p className="mt-5 max-w-2xl text-lg leading-8 text-primary-foreground/80">
                   Esta página foi desenhada para clínicas médicas, consultórios,
                   centros especializados, operações odontológicas, estéticas e
                   negócios de saúde que precisam crescer sem perder a imagem de
