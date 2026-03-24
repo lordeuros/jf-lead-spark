@@ -336,7 +336,7 @@ const ClinicasMedicas = () => {
               <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl">
                 Comunicação adaptada para diferentes áreas da saúde
               </h2>
-              <p className="mt-5 text-lg leading-8 text-muted-foreground">
+              <p className="mt-5 text-lg leading-8 text-primary-foreground/70">
                 Cada especialidade exige linguagem, oferta e jornada de contato
                 diferentes. A estratégia precisa refletir isso para performar bem.
               </p>
