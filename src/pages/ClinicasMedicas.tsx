@@ -262,14 +262,14 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-muted">
+        <section className="section-padding bg-primary text-primary-foreground">
           <div className="container mx-auto">
             <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
                 <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
                   Atuação ampliada
                 </span>
-                <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
+                <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
                   Soluções de marketing digital para clínicas e serviços da área da saúde
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-muted-foreground">
@@ -284,7 +284,7 @@ const ClinicasMedicas = () => {
                 {audiences.map((item) =>
                 <div
                   key={item}
-                  className="rounded-[1.5rem] border border-border/70 bg-card p-5 text-sm font-medium text-foreground/85 shadow-sm">
+                  className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 text-sm font-medium text-primary-foreground/85 shadow-sm">
                   
                     {item}
                   </div>
@@ -326,17 +326,17 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section id="especialidades" className="section-padding bg-muted">
+        <section id="especialidades" className="section-padding bg-primary text-primary-foreground">
           <div className="container mx-auto grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
-            <div className="rounded-[2rem] border border-border/70 bg-card p-8 shadow-sm">
+            <div className="rounded-[2rem] border border-primary-foreground/15 bg-primary-foreground/10 p-8 shadow-sm">
               <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.24em] text-gold">
                 <Stethoscope className="h-4 w-4" />
                 Especialidades e nichos
               </span>
-              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl">
+              <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl">
                 Comunicação adaptada para diferentes áreas da saúde
               </h2>
-              <p className="mt-5 text-lg leading-8 text-muted-foreground">
+              <p className="mt-5 text-lg leading-8 text-primary-foreground/70">
                 Cada especialidade exige linguagem, oferta e jornada de contato
                 diferentes. A estratégia precisa refletir isso para performar bem.
               </p>
@@ -346,13 +346,13 @@ const ClinicasMedicas = () => {
               {specialties.map((item) =>
               <div
                 key={item}
-                className="rounded-[1.5rem] border border-gold/15 bg-background p-5 shadow-sm">
+                className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 shadow-sm">
                 
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold/10 text-gold">
                       <CheckCircle2 className="h-5 w-5" />
                     </div>
-                    <span className="font-medium text-primary">{item}</span>
+                    <span className="font-medium text-primary-foreground">{item}</span>
                   </div>
                 </div>
               )}
@@ -392,20 +392,20 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <section className="section-padding bg-muted">
+        <section className="section-padding bg-primary text-primary-foreground">
           <div className="container mx-auto grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {pillars.map((item) =>
             <article
               key={item.title}
-              className="rounded-[1.75rem] border border-border/70 bg-card p-7 shadow-sm">
+              className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-7 shadow-sm">
               
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
                   <item.icon className="h-6 w-6" />
                 </div>
-                <h3 className="mt-5 text-xl font-display font-semibold text-primary">
+                <h3 className="mt-5 text-xl font-display font-semibold text-primary-foreground">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                <p className="mt-3 text-sm leading-7 text-primary-foreground/70">
                   {item.text}
                 </p>
               </article>
@@ -485,6 +485,23 @@ const ClinicasMedicas = () => {
           </div>
         </section>
       </main>
+
+      <footer className="bg-primary border-t border-primary-foreground/10 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <a href="/clinicas-medicas" className="flex items-center gap-3 text-primary-foreground">
+              <img src={logo} alt="Logo Avelon Med" className="h-12 w-12 rounded-full object-cover shadow-lg" loading="lazy" />
+              <div>
+                <span className="block text-lg font-display font-bold">Avelon Med</span>
+                <span className="block text-xs uppercase tracking-[0.24em] text-gold">Marketing Médico</span>
+              </div>
+            </a>
+            <p className="text-primary-foreground/40 text-sm">
+              © {new Date().getFullYear()} Avelon Med. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>);
 
 };
