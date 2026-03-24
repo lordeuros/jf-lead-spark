@@ -485,6 +485,23 @@ const ClinicasMedicas = () => {
           </div>
         </section>
       </main>
+
+      <footer className="bg-primary border-t border-primary-foreground/10 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <a href="/clinicas-medicas" className="flex items-center gap-3 text-primary-foreground">
+              <img src={logo} alt="Logo Avelon Med" className="h-12 w-12 rounded-full object-cover shadow-lg" loading="lazy" />
+              <div>
+                <span className="block text-lg font-display font-bold">Avelon Med</span>
+                <span className="block text-xs uppercase tracking-[0.24em] text-gold">Marketing Médico</span>
+              </div>
+            </a>
+            <p className="text-primary-foreground/40 text-sm">
+              © {new Date().getFullYear()} Avelon Med. Todos os direitos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>);
 
 };
