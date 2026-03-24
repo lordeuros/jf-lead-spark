@@ -413,7 +413,31 @@ const ClinicasMedicas = () => {
           </div>
         </section>
 
-        <PartnersCarousel variant="medical" />
+        <section className="section-padding bg-primary text-primary-foreground">
+          <div className="container mx-auto">
+            <p className="text-center text-sm font-semibold uppercase tracking-[0.24em] text-gold mb-10">
+              Empresas que confiam em nós
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
+              {[
+                { name: "Home Angels", logo: partnerHomeAngels },
+                { name: "Clínica Vida", logo: partnerClinicaVida },
+                { name: "OdontoPlus", logo: partnerOdontoplus },
+                { name: "Imóveis Prime", logo: partnerImoveisPrime },
+                { name: "Studio Fit", logo: partnerStudioFit },
+                { name: "Advocacia Mendes", logo: partnerAdvocaciaMendes },
+              ].map((partner) => (
+                <img
+                  key={partner.name}
+                  src={partner.logo}
+                  alt={partner.name}
+                  loading="lazy"
+                  className="h-16 w-auto max-w-[180px] object-contain opacity-70 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0"
+                />
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section id="resultados" className="section-padding bg-background">
           <div className="container mx-auto">
