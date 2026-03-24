@@ -405,7 +405,7 @@ const ClinicasMedicas = () => {
                 <h3 className="mt-5 text-xl font-display font-semibold text-primary-foreground">
                   {item.title}
                 </h3>
-                <p className="mt-3 text-sm leading-7 text-muted-foreground">
+                <p className="mt-3 text-sm leading-7 text-primary-foreground/70">
                   {item.text}
                 </p>
               </article>
