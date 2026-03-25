@@ -158,7 +158,7 @@ const testimonials = [
 const ClinicasMedicas = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-40 border-b border-border/60 bg-background/95 backdrop-blur-md">
+      <header className="sticky top-0 z-40 border-b border-primary-foreground/10 bg-primary backdrop-blur-md">
         <div className="container mx-auto flex items-center justify-between gap-6 py-4">
           <a href="/" className="flex items-center gap-3">
             <img
@@ -167,7 +167,7 @@ const ClinicasMedicas = () => {
               className="h-14 w-14 rounded-full object-cover shadow-md" />
             
             <div>
-              <span className="block text-lg font-display font-bold text-primary">
+              <span className="block text-lg font-display font-bold text-primary-foreground">
                 Avelon Med
               </span>
               <span className="block text-xs uppercase tracking-[0.24em] text-gold">
@@ -181,7 +181,7 @@ const ClinicasMedicas = () => {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-foreground/70 transition-colors duration-200 hover:text-gold">
+              className="text-sm font-medium text-primary-foreground/70 transition-colors duration-200 hover:text-gold">
               
                 {item.label}
               </a>
