@@ -160,7 +160,7 @@ const ClinicasMedicas = () => {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-40 border-b border-primary-foreground/10 bg-primary backdrop-blur-md">
         <div className="container mx-auto flex items-center justify-between gap-6 py-4">
-          <a href="/" className="flex items-center gap-3">
+          <a href="#" className="flex items-center gap-3">
             <img
               src={logo}
               alt="Logo Avelon Med"
