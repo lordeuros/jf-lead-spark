@@ -160,7 +160,7 @@ const ClinicasMedicas = () => {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-40 border-b border-primary-foreground/10 bg-primary backdrop-blur-md">
         <div className="container mx-auto flex items-center justify-between gap-6 py-4">
-          <a href="/" className="flex items-center gap-3">
+          <a href="#" className="flex items-center gap-3">
             <img
               src={logo}
               alt="Logo Avelon Med"
@@ -523,10 +523,10 @@ const ClinicasMedicas = () => {
                   Falar com especialista
                 </a>
                 <a
-                  href="/"
+                  href="#"
                   className="inline-flex items-center justify-center rounded-full border border-primary-foreground/15 px-8 py-4 text-base font-semibold text-primary-foreground transition-colors duration-200 hover:border-gold hover:text-gold-light">
                   
-                  Voltar para o site principal
+                  Voltar ao topo
                 </a>
               </div>
             </div>
@@ -538,7 +538,7 @@ const ClinicasMedicas = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-start justify-between gap-10">
             <div className="flex flex-col gap-4">
-              <a href="/clinicas-medicas" className="flex items-center gap-3 text-primary-foreground">
+              <a href="#" className="flex items-center gap-3 text-primary-foreground">
                 <img src={logo} alt="Logo Avelon Med" className="h-12 w-12 rounded-full object-cover shadow-lg" loading="lazy" />
                 <div>
                   <span className="block text-lg font-display font-bold">Avelon Med</span>
@@ -557,9 +557,6 @@ const ClinicasMedicas = () => {
                   {item.label}
                 </a>
               ))}
-              <a href="/" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
-                Site principal
-              </a>
             </div>
 
             <div className="flex flex-col gap-4">
