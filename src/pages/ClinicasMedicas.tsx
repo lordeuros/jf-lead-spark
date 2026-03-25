@@ -523,10 +523,10 @@ const ClinicasMedicas = () => {
                   Falar com especialista
                 </a>
                 <a
-                  href="/"
+                  href="#"
                   className="inline-flex items-center justify-center rounded-full border border-primary-foreground/15 px-8 py-4 text-base font-semibold text-primary-foreground transition-colors duration-200 hover:border-gold hover:text-gold-light">
                   
-                  Voltar para o site principal
+                  Voltar ao topo
                 </a>
               </div>
             </div>
