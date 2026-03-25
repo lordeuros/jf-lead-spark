@@ -557,9 +557,6 @@ const ClinicasMedicas = () => {
                   {item.label}
                 </a>
               ))}
-              <a href="/" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
-                Site principal
-              </a>
             </div>
 
             <div className="flex flex-col gap-4">
