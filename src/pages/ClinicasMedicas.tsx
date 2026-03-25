@@ -538,7 +538,7 @@ const ClinicasMedicas = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-start justify-between gap-10">
             <div className="flex flex-col gap-4">
-              <a href="/clinicas-medicas" className="flex items-center gap-3 text-primary-foreground">
+              <a href="#" className="flex items-center gap-3 text-primary-foreground">
                 <img src={logo} alt="Logo Avelon Med" className="h-12 w-12 rounded-full object-cover shadow-lg" loading="lazy" />
                 <div>
                   <span className="block text-lg font-display font-bold">Avelon Med</span>
