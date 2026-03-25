@@ -354,13 +354,13 @@ const ClinicasMedicas = () => {
               {specialties.map((item) =>
               <div
                 key={item}
-                className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 shadow-sm flex items-center">
+                className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 px-4 py-5 shadow-sm flex items-center min-h-[72px]">
                 
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 w-full">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
                       <CheckCircle2 className="h-5 w-5" />
                     </div>
-                    <span className="font-medium text-primary-foreground">{item}</span>
+                    <span className="font-medium text-primary-foreground text-sm leading-tight break-words">{item}</span>
                   </div>
                 </div>
               )}
