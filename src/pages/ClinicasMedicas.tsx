@@ -22,7 +22,7 @@ import {
   Users } from
 "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
-import doctorHero from "@/assets/doctor-hero.jpg";
+import doctorHero from "@/assets/doctor-hero.png";
 import partnerHomeAngels from "@/assets/partner-homeangels.png";
 import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
 import partnerOdontoplus from "@/assets/partner-odontoplus.png";
