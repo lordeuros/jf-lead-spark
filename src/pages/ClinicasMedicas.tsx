@@ -22,7 +22,7 @@ import {
   Users } from
 "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
-import doctorHero from "@/assets/doctor-hero.jpg";
+import doctorHero from "@/assets/doctor-hero.png";
 import partnerHomeAngels from "@/assets/partner-homeangels.png";
 import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
 import partnerOdontoplus from "@/assets/partner-odontoplus.png";
@@ -158,7 +158,7 @@ const testimonials = [
 const ClinicasMedicas = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-40 border-b border-border/60 bg-background/95 backdrop-blur-md">
+      <header className="sticky top-0 z-40 border-b border-primary-foreground/10 bg-primary backdrop-blur-md">
         <div className="container mx-auto flex items-center justify-between gap-6 py-4">
           <a href="/" className="flex items-center gap-3">
             <img
@@ -167,7 +167,7 @@ const ClinicasMedicas = () => {
               className="h-14 w-14 rounded-full object-cover shadow-md" />
             
             <div>
-              <span className="block text-lg font-display font-bold text-primary">
+              <span className="block text-lg font-display font-bold text-primary-foreground">
                 Avelon Med
               </span>
               <span className="block text-xs uppercase tracking-[0.24em] text-gold">
@@ -181,7 +181,7 @@ const ClinicasMedicas = () => {
             <a
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-foreground/70 transition-colors duration-200 hover:text-gold">
+              className="text-sm font-medium text-primary-foreground/70 transition-colors duration-200 hover:text-gold">
               
                 {item.label}
               </a>
@@ -354,13 +354,13 @@ const ClinicasMedicas = () => {
               {specialties.map((item) =>
               <div
                 key={item}
-                className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 shadow-sm flex items-center">
+                className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 px-4 py-5 shadow-sm flex items-center min-h-[72px]">
                 
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 w-full">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
                       <CheckCircle2 className="h-5 w-5" />
                     </div>
-                    <span className="font-medium text-primary-foreground">{item}</span>
+                    <span className="font-medium text-primary-foreground text-sm leading-tight break-words">{item}</span>
                   </div>
                 </div>
               )}
@@ -455,7 +455,7 @@ const ClinicasMedicas = () => {
                     src={partner.logo}
                     alt={partner.name}
                     loading="lazy"
-                    className="h-20 w-auto max-w-[200px] object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 mx-10"
+                    className="h-28 w-auto max-w-[240px] object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 mx-12"
                   />
                 ))
               )}
