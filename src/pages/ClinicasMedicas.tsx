@@ -455,7 +455,7 @@ const ClinicasMedicas = () => {
                     src={partner.logo}
                     alt={partner.name}
                     loading="lazy"
-                    className="h-20 w-auto max-w-[200px] object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 mx-10"
+                    className="h-28 w-auto max-w-[240px] object-contain opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 mx-12"
                   />
                 ))
               )}
