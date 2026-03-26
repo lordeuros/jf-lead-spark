@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ClinicasMedicas from "./pages/ClinicasMedicas.tsx";
+import Odontologia from "./pages/Odontologia.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -16,6 +17,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ClinicasMedicas />} />
+          <Route path="/odontologia" element={<Odontologia />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
