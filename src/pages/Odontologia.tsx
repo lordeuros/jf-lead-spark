@@ -1,5 +1,6 @@
 import {
   Activity,
+  AlertTriangle,
   ArrowRight,
   BadgeCheck,
   CalendarCheck,
@@ -21,6 +22,11 @@ import {
   TimerReset,
   TrendingUp,
   Users,
+  XCircle,
+  Zap,
+  Target,
+  Award,
+  BarChart3,
 } from "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
 import dentistHero from "@/assets/dentist-hero.png";
@@ -32,129 +38,197 @@ import partnerStudioFit from "@/assets/partner-studio-fit.png";
 import partnerAdvocaciaMendes from "@/assets/partner-advocacia-mendes.png";
 
 const WHATSAPP_URL =
-  "https://wa.me/5532999999999?text=Olá! Quero uma estratégia de marketing digital para minha clínica odontológica.";
+  "https://wa.me/5532999999999?text=Olá! Quero atrair mais pacientes para minha clínica odontológica.";
 
 const navItems = [
   { label: "Soluções", href: "#solucoes-odonto" },
   { label: "Especialidades", href: "#especialidades-odonto" },
-  { label: "Processo", href: "#processo-odonto" },
   { label: "Resultados", href: "#resultados-odonto" },
+  { label: "Método", href: "#metodo-odonto" },
   { label: "Contato", href: "#contato-odonto" },
 ];
 
 const services = [
   {
     icon: Search,
-    title: "Google Ads para tratamentos odontológicos",
+    title: "Atraia pacientes prontos para agendar no Google",
     description:
-      "Campanhas segmentadas para captar pacientes com intenção real de agendar procedimentos como implantes, ortodontia e estética dental.",
+      "Campanhas inteligentes que colocam sua clínica no topo quando pacientes buscam por implantes, ortodontia, estética dental e mais. Só paga por quem realmente tem intenção.",
   },
   {
     icon: ClipboardPlus,
-    title: "Sites e landing pages para dentistas",
+    title: "Página que transforma visitante em paciente",
     description:
-      "Páginas profissionais com estrutura de confiança, autoridade odontológica e foco em conversão de novos pacientes.",
+      "Landing pages profissionais com estrutura de confiança e autoridade que convertem até 3x mais que sites comuns de dentistas.",
   },
   {
     icon: CalendarCheck,
-    title: "Captação e agendamento via WhatsApp",
+    title: "Agendamento direto pelo WhatsApp sem perder leads",
     description:
-      "Jornadas otimizadas para transformar interesse em agendamento de consultas e avaliações com menos perda de leads.",
+      "Fluxos automatizados que transformam cliques em agendamentos reais. Menos tempo perdido, mais cadeira ocupada.",
   },
   {
     icon: MapPin,
-    title: "SEO local e Google Meu Negócio",
+    title: "Domine as buscas na sua região",
     description:
-      "Presença forte nas buscas da sua região para consultórios, clínicas odontológicas e especialidades dentárias.",
+      "SEO local e Google Meu Negócio otimizados para sua clínica aparecer primeiro quando alguém busca dentista perto de você.",
   },
   {
     icon: Activity,
-    title: "Posicionamento e autoridade digital",
+    title: "Construa autoridade e seja referência",
     description:
-      "Comunicação profissional para reforçar credibilidade, percepção premium e diferenciação no mercado odontológico.",
+      "Posicionamento digital que transmite credibilidade, profissionalismo e faz pacientes escolherem você em vez da concorrência.",
   },
   {
     icon: TrendingUp,
-    title: "Otimização contínua de campanhas",
+    title: "Crescimento previsível mês após mês",
     description:
-      "Análise, ajustes e evolução da operação para gerar mais pacientes qualificados com previsibilidade.",
+      "Otimização contínua baseada em dados reais. Você sabe exatamente quantos pacientes novos esperar a cada semana.",
   },
 ];
 
-const audiences = [
-  "Clínicas odontológicas",
-  "Consultórios particulares",
-  "Centros de implantodontia",
-  "Clínicas de ortodontia",
-  "Estética dental e harmonização",
-  "Odontopediatria",
-];
-
-const specialties = [
-  "Implantodontia",
-  "Ortodontia",
-  "Endodontia",
-  "Periodontia",
-  "Prótese Dentária",
-  "Estética Dental",
-  "Odontopediatria",
-  "Harmonização Orofacial",
-];
-
-const pillars = [
+const painPoints = [
   {
-    icon: ShieldCheck,
-    title: "Percepção de confiança",
-    text: "Design, copy e estrutura pensados para transmitir segurança e profissionalismo desde o primeiro acesso do paciente.",
+    icon: XCircle,
+    title: "Depende só de indicação",
+    description: "Sem indicação, a agenda fica vazia. Você não tem controle sobre o fluxo de pacientes novos.",
   },
   {
-    icon: Users,
-    title: "Pacientes mais qualificados",
-    text: "Atração segmentada para tratamentos, procedimentos e regiões com maior potencial de conversão.",
+    icon: AlertTriangle,
+    title: "Instagram sem retorno financeiro",
+    description: "Posta conteúdo, ganha curtidas, mas nenhum paciente novo agenda por lá.",
   },
   {
     icon: TimerReset,
-    title: "Resposta mais rápida",
-    text: "Fluxos via WhatsApp e páginas objetivas para reduzir atrito no contato e no agendamento de avaliações.",
+    title: "Agenda instável e imprevisível",
+    description: "Meses bons seguidos de meses fracos. Não dá para planejar crescimento assim.",
   },
   {
-    icon: BadgeCheck,
-    title: "Estratégia consistente",
-    text: "Planejamento, acompanhamento e otimização contínua para sustentar crescimento com mais previsibilidade.",
+    icon: Target,
+    title: "Investe em tráfego mas não converte",
+    description: "Já tentou anúncios e não funcionou? O problema não é o tráfego — é a estratégia.",
   },
 ];
 
-const processSteps = [
-  "Diagnóstico da presença digital atual da clínica ou consultório odontológico",
-  "Definição de tratamentos, diferenciais, especialidades e público-alvo",
-  "Criação da página, campanhas e ativos de conversão",
-  "Integração com WhatsApp, formulários e rotina de agendamento",
-  "Otimização recorrente com base em dados e qualidade dos contatos",
+const specialties = [
+  { name: "Implantodontia", benefit: "Pacientes de alto ticket prontos para investir" },
+  { name: "Ortodontia", benefit: "Captação contínua para tratamentos longos" },
+  { name: "Endodontia", benefit: "Urgências e tratamentos com alta demanda" },
+  { name: "Periodontia", benefit: "Pacientes buscando tratamento especializado" },
+  { name: "Prótese Dentária", benefit: "Alto valor percebido e ticket elevado" },
+  { name: "Estética Dental", benefit: "Lentes, clareamento e alta conversão" },
+  { name: "Odontopediatria", benefit: "Mães buscando referência de confiança" },
+  { name: "Harmonização Orofacial", benefit: "Mercado em crescimento explosivo" },
 ];
 
 const numbers = [
-  { value: "+43%", label: "mais contatos qualificados em projetos otimizados" },
-  { value: "5.0 ★", label: "percepção média de atendimento e confiança" },
-  { value: "24h", label: "prazo inicial para diagnóstico estratégico" },
+  { value: "+43%", label: "mais pacientes em 60 dias com nossas estratégias" },
+  { value: "R$27", label: "custo médio por lead qualificado em odontologia" },
+  { value: "3x", label: "mais agendamentos comparado a métodos tradicionais" },
 ];
+
+const caseStudy = {
+  title: "Clínica OdontoVita — De agenda vazia a lista de espera",
+  before: [
+    "3 a 5 pacientes novos por mês via indicação",
+    "Instagram com 200 seguidores e zero conversão",
+    "Sem presença no Google",
+    "Faturamento mensal de R$18.000",
+  ],
+  after: [
+    "22 pacientes novos por mês via digital",
+    "Landing page convertendo a 12% dos visitantes",
+    "Top 3 no Google para 'implante dentário + cidade'",
+    "Faturamento mensal de R$47.000",
+  ],
+  timeframe: "Resultados alcançados em 90 dias",
+};
 
 const testimonials = [
   {
     name: "Dr. Felipe Souza",
     role: "Clínica de Implantodontia",
-    text: "A página ficou muito mais profissional e os contatos passaram a chegar com mais contexto e intenção real de agendar implantes.",
+    text: "Em 2 meses triplicamos os agendamentos de implantes. Hoje tenho fila de espera para avaliações. A Avelon Odonto mudou completamente meu consultório.",
   },
   {
     name: "Dra. Marina Costa",
     role: "Ortodontia e Estética Dental",
-    text: "Melhoramos a imagem do consultório no digital e passamos a receber pacientes mais alinhados com nossos tratamentos estéticos.",
+    text: "Saí de 4 pacientes novos por mês para 18. O melhor é que são pacientes qualificados, que já chegam querendo o tratamento.",
   },
   {
-    name: "OdontoVita Clínica",
+    name: "Dr. Ricardo Mendes",
     role: "Clínica Odontológica Multidisciplinar",
-    text: "A Avelon Odonto organizou nossa captação com clareza. Hoje temos campanhas, landing page e WhatsApp trabalhando juntos.",
+    text: "Investia R$2.000/mês em Instagram e não via retorno. Com a Avelon, invisto o mesmo e trago 25+ pacientes por mês pelo Google.",
   },
 ];
+
+const objections = [
+  {
+    icon: ShieldCheck,
+    title: "Funciona para clínicas pequenas?",
+    text: "Sim. Nossa estratégia é escalável. Começamos com orçamentos a partir de R$1.500/mês e já geramos resultados significativos.",
+  },
+  {
+    icon: Zap,
+    title: "Quanto tempo para ver resultado?",
+    text: "Os primeiros agendamentos surgem nos primeiros 15 a 30 dias. Resultados consistentes acontecem a partir de 60 dias.",
+  },
+  {
+    icon: BarChart3,
+    title: "E se eu já tentei e não funcionou?",
+    text: "90% das clínicas que nos procuram já tentaram antes. O problema geralmente é estratégia, não investimento. Corrigimos isso.",
+  },
+  {
+    icon: BadgeCheck,
+    title: "Preciso produzir conteúdo?",
+    text: "Não. Nossa estratégia foca em tráfego pago e conversão. Você foca no atendimento, nós cuidamos da captação.",
+  },
+];
+
+const processSteps = [
+  { step: "Diagnóstico gratuito", desc: "Analisamos sua presença digital, concorrência e oportunidades na sua região" },
+  { step: "Estratégia personalizada", desc: "Definimos campanhas, palavras-chave e jornada de conversão ideal para sua especialidade" },
+  { step: "Lançamento em 7 dias", desc: "Criamos landing page, campanhas e fluxo de WhatsApp em tempo recorde" },
+  { step: "Primeiros pacientes", desc: "Em 15 a 30 dias você começa a receber agendamentos de pacientes qualificados" },
+  { step: "Escala previsível", desc: "Otimização contínua para crescer com previsibilidade e controle mês após mês" },
+];
+
+const CtaBanner = ({ variant = "light" }: { variant?: "light" | "dark" }) => {
+  const isDark = variant === "dark";
+  return (
+    <div className={`py-10 ${isDark ? "" : ""}`}>
+      <div className="container mx-auto">
+        <div className={`rounded-[2rem] px-8 py-10 text-center ${isDark ? "bg-card border border-border/70" : "bg-primary text-primary-foreground"}`}>
+          <h3 className={`text-2xl font-display font-bold sm:text-3xl ${isDark ? "text-primary" : ""}`}>
+            Sua clínica pode ter mais pacientes a partir de agora
+          </h3>
+          <p className={`mt-3 text-base mx-auto max-w-2xl ${isDark ? "text-muted-foreground" : "text-primary-foreground/70"}`}>
+            Receba um diagnóstico gratuito e descubra como atrair pacientes qualificados todos os dias.
+          </p>
+          <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-base font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97] shadow-lg shadow-gold/20"
+            >
+              <MessageCircle className="h-4 w-4" />
+              Quero mais pacientes na minha clínica
+            </a>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center justify-center rounded-full border px-7 py-4 text-base font-semibold transition-colors duration-200 ${isDark ? "border-border hover:border-gold hover:text-gold text-primary" : "border-primary-foreground/15 hover:border-gold hover:text-gold text-primary-foreground"}`}
+            >
+              Receber diagnóstico gratuito
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const Odontologia = () => {
   return (
@@ -196,7 +270,7 @@ const Odontologia = () => {
             className="inline-flex items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
           >
             <MessageCircle className="h-4 w-4" />
-            Fale no WhatsApp
+            Quero mais pacientes
           </a>
         </div>
       </header>
@@ -212,15 +286,14 @@ const Odontologia = () => {
               </span>
 
               <h1 className="mt-6 max-w-4xl text-4xl font-display font-bold leading-[1.04] text-primary sm:text-5xl lg:text-6xl xl:text-7xl">
-                Estratégias digitais para{" "}
-                <span className="text-gold">Dentistas</span> e clínicas
-                odontológicas que precisam crescer com autoridade
+                Atraia mais <span className="text-gold">pacientes</span> todos
+                os dias e pare de depender apenas de indicações
               </h1>
 
               <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-                A Avelon Odonto cria páginas, campanhas e operações de captação
-                para clínicas e consultórios odontológicos que desejam aumentar
-                agendamentos, fortalecer a marca e transmitir confiança.
+                Clínicas odontológicas que usam nossa estratégia recebem em média
+                <strong className="text-foreground"> +43% mais pacientes em 60 dias</strong>.
+                Tenha previsibilidade, agenda cheia e crescimento real — sem depender de sorte.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -228,16 +301,18 @@ const Odontologia = () => {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-base font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-base font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97] shadow-lg shadow-gold/20"
                 >
-                  Solicitar estratégia
+                  Quero mais pacientes na minha clínica
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
-                  href="#solucoes-odonto"
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-full border border-border bg-card px-7 py-4 text-base font-semibold text-primary transition-colors duration-200 hover:border-gold hover:text-gold"
                 >
-                  Ver soluções para odontologia
+                  Receber diagnóstico gratuito
                 </a>
               </div>
 
@@ -274,50 +349,63 @@ const Odontologia = () => {
           </div>
         </section>
 
-        {/* Audiences */}
-        <section className="py-10 md:py-14 bg-primary text-primary-foreground">
+        {/* Pain Points - Seção de Dor */}
+        <section className="py-14 md:py-20 bg-primary text-primary-foreground">
           <div className="container mx-auto">
-            <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-              <div>
-                <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
-                  Atuação especializada
-                </span>
-                <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
-                  Soluções de marketing digital para clínicas e consultórios
-                  odontológicos
-                </h2>
-                <p className="mt-5 max-w-2xl text-lg leading-8 text-primary-foreground/80">
-                  Esta página foi desenhada para clínicas odontológicas,
-                  consultórios, centros de implantodontia, ortodontia, estética
-                  dental e profissionais que precisam crescer sem perder a imagem
-                  de excelência e seriedade.
-                </p>
-              </div>
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
+                Você se identifica?
+              </span>
+              <h2 className="mt-4 text-3xl font-display font-bold sm:text-4xl lg:text-5xl">
+                Por que sua clínica não está atraindo pacientes?
+              </h2>
+              <p className="mt-5 text-lg leading-8 text-primary-foreground/70">
+                Se algum desses problemas faz parte da sua rotina, você está perdendo pacientes — e dinheiro — todos os dias.
+              </p>
+            </div>
 
-              <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-                {audiences.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 text-sm font-medium text-primary-foreground/85 shadow-sm"
-                  >
-                    {item}
+            <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+              {painPoints.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-[1.75rem] border border-destructive/20 bg-destructive/5 p-7 shadow-sm"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-destructive/10 text-destructive">
+                    <item.icon className="h-6 w-6" />
                   </div>
-                ))}
-              </div>
+                  <h3 className="mt-5 text-lg font-display font-semibold text-primary-foreground">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-primary-foreground/70">
+                    {item.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-xl font-display font-semibold text-gold">
+                A boa notícia? Existe um método comprovado para resolver tudo isso.
+              </p>
+              <a
+                href="#solucoes-odonto"
+                className="mt-4 inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-medium"
+              >
+                Veja como funciona <ArrowRight className="h-4 w-4" />
+              </a>
             </div>
           </div>
         </section>
 
-        {/* Services */}
-        <section id="solucoes-odonto" className="py-10 md:py-14 bg-background">
+        {/* Services - Rewritten as benefits */}
+        <section id="solucoes-odonto" className="py-14 md:py-20 bg-background">
           <div className="container mx-auto">
             <div className="max-w-3xl">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
-                Soluções estratégicas
+                Como vamos lotar sua agenda
               </span>
               <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
-                Uma operação digital completa para atrair, converter e
-                acompanhar pacientes odontológicos
+                Tudo que sua clínica precisa para atrair pacientes de forma previsível
               </h2>
             </div>
 
@@ -342,10 +430,13 @@ const Odontologia = () => {
           </div>
         </section>
 
-        {/* Specialties */}
+        {/* CTA Banner */}
+        <CtaBanner variant="dark" />
+
+        {/* Specialties with micro-descriptions */}
         <section
           id="especialidades-odonto"
-          className="py-10 md:py-14 bg-primary text-primary-foreground"
+          className="py-14 md:py-20 bg-primary text-primary-foreground"
         >
           <div className="container mx-auto grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
             <div className="rounded-[2rem] border border-primary-foreground/15 bg-primary-foreground/10 p-8 shadow-sm">
@@ -354,67 +445,30 @@ const Odontologia = () => {
                 Especialidades odontológicas
               </span>
               <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl">
-                Comunicação adaptada para cada área da odontologia
+                Estratégia sob medida para cada especialidade
               </h2>
               <p className="mt-5 text-lg leading-8 text-primary-foreground/70">
-                Cada especialidade exige linguagem, oferta e jornada de contato
-                diferentes. A estratégia precisa refletir isso para performar
-                bem.
+                Cada área exige uma abordagem diferente. Criamos campanhas específicas
+                para o perfil de paciente que você quer atrair.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
               {specialties.map((item) => (
                 <div
-                  key={item}
-                  className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 px-4 py-5 shadow-sm flex items-center min-h-[72px]"
+                  key={item.name}
+                  className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 px-4 py-5 shadow-sm"
                 >
-                  <div className="flex items-center gap-3 w-full">
+                  <div className="flex items-center gap-3 mb-2">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
                       <CheckCircle2 className="h-5 w-5" />
                     </div>
-                    <span className="font-medium text-primary-foreground text-sm leading-tight break-words">
-                      {item}
+                    <span className="font-medium text-primary-foreground text-sm leading-tight">
+                      {item.name}
                     </span>
                   </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Process */}
-        <section
-          id="processo-odonto"
-          className="py-10 md:py-14 bg-background"
-        >
-          <div className="container mx-auto grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div>
-              <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
-                Processo de trabalho
-              </span>
-              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
-                Uma construção profissional do posicionamento à geração de
-                demanda
-              </h2>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
-                Mais do que anúncios, estruturamos uma jornada digital coerente
-                para clínicas odontológicas que desejam previsibilidade e um
-                posicionamento mais forte no mercado.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              {processSteps.map((step, index) => (
-                <div
-                  key={step}
-                  className="flex items-start gap-4 rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm"
-                >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary-foreground">
-                    {index + 1}
-                  </div>
-                  <p className="pt-1 text-sm leading-7 text-foreground/85">
-                    {step}
+                  <p className="text-xs text-primary-foreground/50 pl-[52px]">
+                    {item.benefit}
                   </p>
                 </div>
               ))}
@@ -422,30 +476,126 @@ const Odontologia = () => {
           </div>
         </section>
 
-        {/* Pillars */}
-        <section className="py-10 md:py-14 bg-primary text-primary-foreground">
+        {/* Case Study - Before/After */}
+        <section id="resultados-odonto" className="py-14 md:py-20 bg-background">
           <div className="container mx-auto">
-            <div className="text-center mb-8">
+            <div className="text-center max-w-3xl mx-auto mb-12">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
-                Nossos pilares
+                Estudo de caso real
               </span>
-              <h2 className="mt-3 text-3xl font-display font-bold text-primary-foreground sm:text-4xl">
-                Por que dentistas escolhem a Avelon Odonto
+              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
+                {caseStudy.title}
+              </h2>
+              <p className="mt-3 text-base text-muted-foreground">{caseStudy.timeframe}</p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+              <div className="rounded-[1.75rem] border border-destructive/20 bg-destructive/5 p-8">
+                <h3 className="text-lg font-display font-bold text-destructive mb-4">❌ Antes da Avelon</h3>
+                <ul className="space-y-3">
+                  {caseStudy.before.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground">
+                      <XCircle className="h-5 w-5 shrink-0 text-destructive/60 mt-0.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="rounded-[1.75rem] border border-gold/20 bg-gold/5 p-8">
+                <h3 className="text-lg font-display font-bold text-gold mb-4">✅ Depois da Avelon</h3>
+                <ul className="space-y-3">
+                  {caseStudy.after.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-foreground">
+                      <CheckCircle2 className="h-5 w-5 shrink-0 text-gold mt-0.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="text-center mt-8">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-base font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97] shadow-lg shadow-gold/20"
+              >
+                Quero resultados assim na minha clínica
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="py-14 md:py-20 bg-primary text-primary-foreground">
+          <div className="container mx-auto">
+            <div className="max-w-2xl mb-12">
+              <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
+                Resultados reais
+              </span>
+              <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl">
+                Clínicas que transformaram seus resultados com a Avelon Odonto
               </h2>
             </div>
-            <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-              {pillars.map((item) => (
+
+            <div className="grid gap-6 lg:grid-cols-3">
+              {testimonials.map((item) => (
+                <article
+                  key={item.name}
+                  className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-8 shadow-sm"
+                >
+                  <div className="flex gap-1 text-gold">
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <Star key={index} className="h-4 w-4 fill-current" />
+                    ))}
+                  </div>
+                  <p className="mt-5 text-base leading-8 text-primary-foreground/85">
+                    "{item.text}"
+                  </p>
+                  <div className="mt-6 border-t border-primary-foreground/10 pt-5">
+                    <p className="font-semibold text-primary-foreground">{item.name}</p>
+                    <p className="text-sm text-primary-foreground/60">{item.role}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Banner */}
+        <CtaBanner variant="light" />
+
+        {/* Objection Breaking */}
+        <section id="metodo-odonto" className="py-14 md:py-20 bg-background">
+          <div className="container mx-auto">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+              <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
+                Tire suas dúvidas
+              </span>
+              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
+                Por que isso funciona para clínicas odontológicas?
+              </h2>
+              <p className="mt-5 text-lg text-muted-foreground">
+                Entendemos suas preocupações. Veja por que nosso método é diferente de tudo que você já tentou.
+              </p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+              {objections.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-7 shadow-sm"
+                  className="rounded-[1.75rem] border border-border/70 bg-card p-7 shadow-sm"
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
                     <item.icon className="h-6 w-6" />
                   </div>
-                  <h3 className="mt-5 text-xl font-display font-semibold text-primary-foreground">
+                  <h3 className="mt-5 text-lg font-display font-semibold text-primary">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-7 text-primary-foreground/80">
+                  <p className="mt-3 text-sm leading-7 text-muted-foreground">
                     {item.text}
                   </p>
                 </article>
@@ -454,11 +604,76 @@ const Odontologia = () => {
           </div>
         </section>
 
+        {/* Process */}
+        <section className="py-14 md:py-20 bg-primary text-primary-foreground">
+          <div className="container mx-auto grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
+                Processo simples
+              </span>
+              <h2 className="mt-4 text-3xl font-display font-bold text-primary-foreground sm:text-4xl lg:text-5xl">
+                Do diagnóstico aos primeiros pacientes em 30 dias
+              </h2>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-primary-foreground/70">
+                Sem complicação. Você cuida dos pacientes, nós cuidamos de trazer eles até você.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {processSteps.map((item, index) => (
+                <div
+                  key={item.step}
+                  className="flex items-start gap-4 rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 shadow-sm"
+                >
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary-foreground">
+                    {index + 1}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-primary-foreground">{item.step}</p>
+                    <p className="mt-1 text-sm leading-7 text-primary-foreground/60">
+                      {item.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Authority - Quem está por trás */}
+        <section className="py-14 md:py-20 bg-background">
+          <div className="container mx-auto">
+            <div className="max-w-4xl mx-auto rounded-[2rem] border border-border/70 bg-card p-8 md:p-12 shadow-sm">
+              <div className="grid gap-8 md:grid-cols-[auto_1fr] items-center">
+                <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gold/10">
+                  <Award className="h-12 w-12 text-gold" />
+                </div>
+                <div>
+                  <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
+                    Quem está por trás
+                  </span>
+                  <h2 className="mt-3 text-2xl font-display font-bold text-primary sm:text-3xl">
+                    Especialistas em marketing para a área da saúde
+                  </h2>
+                  <p className="mt-4 text-base leading-8 text-muted-foreground">
+                    A Avelon Odonto nasceu da experiência real com clínicas e consultórios
+                    odontológicos. Não somos uma agência genérica — entendemos as
+                    particularidades do marketing na saúde, as regras do CFO, e sabemos
+                    exatamente o que funciona para atrair pacientes qualificados. Já
+                    ajudamos dezenas de clínicas a saírem da dependência de indicação
+                    para um modelo previsível de captação digital.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Partners Carousel */}
         <section className="py-10 md:py-14 bg-primary text-primary-foreground overflow-hidden">
           <div className="container mx-auto mb-8">
             <h2 className="text-center text-2xl font-display font-bold text-primary-foreground sm:text-3xl">
-              Empresas que confiam em nós
+              Clínicas e empresas que confiam na Avelon
             </h2>
           </div>
           <div className="relative">
@@ -493,73 +708,34 @@ const Odontologia = () => {
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section
-          id="resultados-odonto"
-          className="py-10 md:py-14 bg-background"
-        >
+        {/* Final CTA - Strong urgency */}
+        <section id="contato-odonto" className="py-16 md:py-24 bg-background">
           <div className="container mx-auto">
-            <div className="max-w-2xl">
-              <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
-                Prova social
-              </span>
-              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl">
-                Uma apresentação mais profissional ajuda a converter melhor
-              </h2>
-            </div>
-
-            <div className="mt-12 grid gap-6 lg:grid-cols-3">
-              {testimonials.map((item) => (
-                <article
-                  key={item.name}
-                  className="rounded-[1.75rem] border border-border/70 bg-card p-8 shadow-sm"
-                >
-                  <div className="flex gap-1 text-gold">
-                    {Array.from({ length: 5 }).map((_, index) => (
-                      <Star key={index} className="h-4 w-4 fill-current" />
-                    ))}
-                  </div>
-                  <p className="mt-5 text-base leading-8 text-foreground/85">
-                    "{item.text}"
-                  </p>
-                  <div className="mt-6 border-t border-border/70 pt-5">
-                    <p className="font-semibold text-primary">{item.name}</p>
-                    <p className="text-sm text-muted-foreground">{item.role}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section id="contato-odonto" className="py-12 md:py-16 bg-background">
-          <div className="container mx-auto">
-            <div className="rounded-[2rem] border border-gold/20 bg-primary px-8 py-12 text-center text-primary-foreground shadow-[0_24px_80px_-32px_hsla(var(--primary),0.35)] sm:px-12">
+            <div className="rounded-[2rem] border border-gold/20 bg-primary px-8 py-14 text-center text-primary-foreground shadow-[0_24px_80px_-32px_hsla(var(--primary),0.35)] sm:px-12">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold-light">
-                Próximo passo
+                Não espere mais
               </span>
               <h2 className="mt-4 text-3xl font-display font-bold sm:text-4xl lg:text-5xl">
-                Quer atrair mais pacientes e uma estratégia profissional para
-                sua clínica odontológica?
+                Clínicas que não investem em captação digital ficam invisíveis
               </h2>
               <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-primary-foreground/70">
-                Fale com a Avelon Odonto e receba uma direção inicial para
-                aumentar seus agendamentos, fortalecer sua presença digital e
-                melhorar a qualidade dos contatos que chegam até sua equipe.
+                Enquanto você espera, seus concorrentes estão investindo em marketing digital
+                e atraindo os pacientes que poderiam ser seus. Não deixe sua clínica
+                para trás — comece hoje com um diagnóstico gratuito.
               </p>
               <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-base font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-base font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97] shadow-lg shadow-gold/20"
                 >
                   <PhoneCall className="h-4 w-4" />
-                  Falar com especialista
+                  Quero atrair mais pacientes agora
                 </a>
                 <a
                   href="#"
+                  onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}
                   className="inline-flex items-center justify-center rounded-full border border-primary-foreground/15 px-8 py-4 text-base font-semibold text-primary-foreground transition-colors duration-200 hover:border-gold hover:text-gold-light"
                 >
                   Voltar ao topo
@@ -569,6 +745,17 @@ const Odontologia = () => {
           </div>
         </section>
       </main>
+
+      {/* Floating WhatsApp Button */}
+      <a
+        href={WHATSAPP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-[#25D366]/30 transition-all duration-200 hover:scale-110 active:scale-95"
+        aria-label="Fale no WhatsApp"
+      >
+        <MessageCircle className="h-6 w-6" />
+      </a>
 
       {/* Footer */}
       <footer className="bg-primary border-t border-primary-foreground/10 py-12 px-4 sm:px-6 lg:px-8">
@@ -595,7 +782,7 @@ const Odontologia = () => {
                 </div>
               </a>
               <p className="text-primary-foreground/40 text-sm max-w-xs">
-                Estratégias digitais para clínicas e consultórios odontológicos.
+                Estratégias digitais para clínicas e consultórios odontológicos que querem crescer com previsibilidade.
               </p>
             </div>
 
