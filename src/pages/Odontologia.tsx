@@ -23,7 +23,7 @@ import {
   Users,
 } from "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
-import doctorHero from "@/assets/doctor-hero.png";
+import dentistHero from "@/assets/dentist-hero.png";
 import partnerHomeAngels from "@/assets/partner-homeangels.png";
 import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
 import partnerOdontoplus from "@/assets/partner-odontoplus.png";
@@ -264,7 +264,7 @@ const Odontologia = () => {
 
               <div className="relative rounded-[2rem] border border-border/70 bg-card overflow-hidden shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
                 <img
-                  src={doctorHero}
+                  src={dentistHero}
                   alt="Dentista profissional sorrindo"
                   className="w-full h-auto object-cover"
                   loading="eager"
