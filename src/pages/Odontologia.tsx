@@ -264,7 +264,7 @@ const Odontologia = () => {
 
               <div className="relative rounded-[2rem] border border-border/70 bg-card overflow-hidden shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
                 <img
-                  src={doctorHero}
+                  src={dentistHero}
                   alt="Dentista profissional sorrindo"
                   className="w-full h-auto object-cover"
                   loading="eager"
