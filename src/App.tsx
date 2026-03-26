@@ -17,6 +17,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ClinicasMedicas />} />
+          <Route path="/odontologia" element={<Odontologia />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
