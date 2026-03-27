@@ -132,9 +132,9 @@ const processSteps = [
 
 
 const numbers = [
-{ value: "+43%", label: "mais contatos qualificados em projetos otimizados" },
-{ value: "5.0 ★", label: "percepção média de atendimento e confiança" },
-{ value: "24h", label: "prazo inicial para diagnóstico estratégico" }];
+  { value: "+43%", label: "mais contatos qualificados em projetos otimizados" },
+  { value: "5.0★", label: "percepção média de atendimento e confiança" },
+  { value: "24h", label: "prazo inicial para diagnóstico estratégico" }];
 
 
 const testimonials = [
