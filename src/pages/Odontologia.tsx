@@ -38,7 +38,7 @@ import partnerStudioFit from "@/assets/partner-studio-fit.png";
 import partnerAdvocaciaMendes from "@/assets/partner-advocacia-mendes.png";
 
 const WHATSAPP_URL =
-  "https://wa.me/5532999999999?text=Olá! Quero atrair mais pacientes para minha clínica odontológica.";
+  "https://wa.me/5532987157197?text=Olá! Quero atrair mais pacientes para minha clínica odontológica.";
 
 const navItems = [
   { label: "Soluções", href: "#solucoes-odonto" },
