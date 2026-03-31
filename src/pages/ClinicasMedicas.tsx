@@ -19,8 +19,9 @@ import {
   Stethoscope,
   TimerReset,
   TrendingUp,
-  Users } from
-"lucide-react";
+  Users
+} from
+  "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
 import doctorHero from "@/assets/doctor-hero.png";
 import partnerHomeAngels from "@/assets/partner-homeangels.png";
@@ -31,104 +32,104 @@ import partnerStudioFit from "@/assets/partner-studio-fit.png";
 import partnerAdvocaciaMendes from "@/assets/partner-advocacia-mendes.png";
 
 const WHATSAPP_URL =
-"https://wa.me/5532999999999?text=Olá! Quero uma estratégia de marketing digital para minha clínica ou empresa da área da saúde.";
+  "https://wa.me/5532987157197?text=Olá! Quero uma estratégia de marketing digital para minha clínica ou empresa da área da saúde.";
 
 const navItems = [
-{ label: "Soluções", href: "#solucoes" },
-{ label: "Especialidades", href: "#especialidades" },
-{ label: "Processo", href: "#processo" },
-{ label: "Resultados", href: "#resultados" },
-{ label: "Contato", href: "#contato-clinicas" }];
+  { label: "Soluções", href: "#solucoes" },
+  { label: "Especialidades", href: "#especialidades" },
+  { label: "Processo", href: "#processo" },
+  { label: "Resultados", href: "#resultados" },
+  { label: "Contato", href: "#contato-clinicas" }];
 
 
 const services = [
-{
-  icon: Search,
-  title: "Google Ads para consultas e procedimentos",
-  description:
-  "Campanhas segmentadas para captar pacientes com intenção real de atendimento na sua especialidade."
-},
-{
-  icon: ClipboardPlus,
-  title: "Sites e landing pages para saúde",
-  description:
-  "Páginas profissionais com estrutura de confiança, autoridade médica e foco em conversão."
-},
-{
-  icon: CalendarCheck,
-  title: "Captação e pré-triagem via WhatsApp",
-  description:
-  "Jornadas mais rápidas para transformar interesse em agendamento com menos perda de leads."
-},
-{
-  icon: MapPin,
-  title: "SEO local e Google Meu Negócio",
-  description:
-  "Presença forte nas buscas da sua região para consultas, exames, clínicas e especialidades."
-},
-{
-  icon: Activity,
-  title: "Posicionamento e autoridade digital",
-  description:
-  "Comunicação profissional para reforçar credibilidade, percepção premium e diferenciação."
-},
-{
-  icon: TrendingUp,
-  title: "Otimização contínua de campanhas",
-  description:
-  "Análise, ajustes e evolução da operação para gerar mais pacientes qualificados com previsibilidade."
-}];
+  {
+    icon: Search,
+    title: "Google Ads para consultas e procedimentos",
+    description:
+      "Campanhas segmentadas para captar pacientes com intenção real de atendimento na sua especialidade."
+  },
+  {
+    icon: ClipboardPlus,
+    title: "Sites e landing pages para saúde",
+    description:
+      "Páginas profissionais com estrutura de confiança, autoridade médica e foco em conversão."
+  },
+  {
+    icon: CalendarCheck,
+    title: "Captação e pré-triagem via WhatsApp",
+    description:
+      "Jornadas mais rápidas para transformar interesse em agendamento com menos perda de leads."
+  },
+  {
+    icon: MapPin,
+    title: "SEO local e Google Meu Negócio",
+    description:
+      "Presença forte nas buscas da sua região para consultas, exames, clínicas e especialidades."
+  },
+  {
+    icon: Activity,
+    title: "Posicionamento e autoridade digital",
+    description:
+      "Comunicação profissional para reforçar credibilidade, percepção premium e diferenciação."
+  },
+  {
+    icon: TrendingUp,
+    title: "Otimização contínua de campanhas",
+    description:
+      "Análise, ajustes e evolução da operação para gerar mais pacientes qualificados com previsibilidade."
+  }];
 
 
 const audiences = [
-"Clínicas médicas multiespecialidades",
-"Consultórios particulares",
-"Centros de diagnóstico e exames",
-"Clínicas odontológicas e estéticas",
-"Empresas da área da saúde",
-"Profissionais liberais da saúde"];
+  "Clínicas médicas multiespecialidades",
+  "Consultórios particulares",
+  "Centros de diagnóstico e exames",
+  "Clínicas odontológicas e estéticas",
+  "Empresas da área da saúde",
+  "Profissionais liberais da saúde"];
 
 
 const specialties = [
-"Dermatologia",
-"Ortopedia",
-"Cardiologia",
-"Ginecologia",
-"Pediatria",
-"Endocrinologia",
-"Psiquiatria",
-"Odontologia"];
+  "Dermatologia",
+  "Ortopedia",
+  "Cardiologia",
+  "Ginecologia",
+  "Pediatria",
+  "Endocrinologia",
+  "Psiquiatria",
+  "Odontologia"];
 
 
 const pillars = [
-{
-  icon: ShieldCheck,
-  title: "Percepção de confiança",
-  text: "Design, copy e estrutura pensados para transmitir segurança e profissionalismo desde o primeiro acesso."
-},
-{
-  icon: Users,
-  title: "Pacientes mais qualificados",
-  text: "Atração segmentada para especialidades, serviços e regiões com maior potencial de conversão."
-},
-{
-  icon: TimerReset,
-  title: "Resposta mais rápida",
-  text: "Fluxos via WhatsApp e páginas objetivas para reduzir atrito no contato e no agendamento."
-},
-{
-  icon: BadgeCheck,
-  title: "Estratégia consistente",
-  text: "Planejamento, acompanhamento e otimização contínua para sustentar crescimento com mais previsibilidade."
-}];
+  {
+    icon: ShieldCheck,
+    title: "Percepção de confiança",
+    text: "Design, copy e estrutura pensados para transmitir segurança e profissionalismo desde o primeiro acesso."
+  },
+  {
+    icon: Users,
+    title: "Pacientes mais qualificados",
+    text: "Atração segmentada para especialidades, serviços e regiões com maior potencial de conversão."
+  },
+  {
+    icon: TimerReset,
+    title: "Resposta mais rápida",
+    text: "Fluxos via WhatsApp e páginas objetivas para reduzir atrito no contato e no agendamento."
+  },
+  {
+    icon: BadgeCheck,
+    title: "Estratégia consistente",
+    text: "Planejamento, acompanhamento e otimização contínua para sustentar crescimento com mais previsibilidade."
+  }];
 
 
 const processSteps = [
-"Diagnóstico da presença digital atual da clínica ou operação de saúde",
-"Definição de oferta, diferenciais, especialidades e público-alvo",
-"Criação da página, campanhas e ativos de conversão",
-"Integração com WhatsApp, formulários e rotina comercial",
-"Otimização recorrente com base em dados e qualidade dos contatos"];
+  "Diagnóstico da presença digital atual da clínica ou operação de saúde",
+  "Definição de oferta, diferenciais, especialidades e público-alvo",
+  "Criação da página, campanhas e ativos de conversão",
+  "Integração com WhatsApp, formulários e rotina comercial",
+  "Otimização recorrente com base em dados e qualidade dos contatos"];
 
 
 const numbers = [
@@ -138,21 +139,21 @@ const numbers = [
 
 
 const testimonials = [
-{
-  name: "Dra. Camila Andrade",
-  role: "Clínica de Dermatologia",
-  text: "A página ficou muito mais profissional e os contatos passaram a chegar com mais contexto e intenção real de agendamento."
-},
-{
-  name: "Dr. Renato Moura",
-  role: "Clínica Ortopédica",
-  text: "Melhoramos a imagem da clínica no digital e passamos a receber pacientes mais alinhados com o nosso perfil de atendimento."
-},
-{
-  name: "Centro Vitae Saúde",
-  role: "Clínica Multidisciplinar",
-  text: "A Avelon Med organizou nossa captação com clareza. Hoje temos campanhas, landing page e WhatsApp trabalhando juntos."
-}];
+  {
+    name: "Dra. Camila Andrade",
+    role: "Clínica de Dermatologia",
+    text: "A página ficou muito mais profissional e os contatos passaram a chegar com mais contexto e intenção real de agendamento."
+  },
+  {
+    name: "Dr. Renato Moura",
+    role: "Clínica Ortopédica",
+    text: "Melhoramos a imagem da clínica no digital e passamos a receber pacientes mais alinhados com o nosso perfil de atendimento."
+  },
+  {
+    name: "Centro Vitae Saúde",
+    role: "Clínica Multidisciplinar",
+    text: "A Avelon Med organizou nossa captação com clareza. Hoje temos campanhas, landing page e WhatsApp trabalhando juntos."
+  }];
 
 
 const ClinicasMedicas = () => {
@@ -165,7 +166,7 @@ const ClinicasMedicas = () => {
               src={logo}
               alt="Logo Avelon Med"
               className="h-14 w-14 rounded-full object-cover shadow-md" />
-            
+
             <div>
               <span className="block text-lg font-display font-bold text-primary-foreground">
                 Avelon Med
@@ -178,11 +179,11 @@ const ClinicasMedicas = () => {
 
           <nav className="hidden items-center gap-6 lg:flex">
             {navItems.map((item) =>
-            <a
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-primary-foreground/70 transition-colors duration-200 hover:text-gold">
-              
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium text-primary-foreground/70 transition-colors duration-200 hover:text-gold">
+
                 {item.label}
               </a>
             )}
@@ -193,7 +194,7 @@ const ClinicasMedicas = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]">
-            
+
             <MessageCircle className="h-4 w-4" />
             Fale no WhatsApp
           </a>
@@ -209,11 +210,11 @@ const ClinicasMedicas = () => {
                 Marketing digital para clínicas e saúde
               </span>
 
-              <h1 className="mt-6 max-w-4xl text-4xl font-display font-bold leading-[1.04] text-primary sm:text-5xl lg:text-6xl xl:text-7xl">
-                Estratégias digitais para <span className="text-gold">Médicos</span> e serviços da área de saúde que precisam crescer com mais autoridade
+              <h1 className="mt-6 max-w-3xl text-3xl font-display font-bold leading-[1.08] tracking-[-0.02em] text-primary sm:text-4xl lg:text-5xl xl:text-[3.6rem]">
+                Estratégias digitais para <span className="text-gold">médicos</span> e negócios da saúde que precisam crescer com autoridade
               </h1>
 
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
+              <p className="mt-5 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
                 A Avelon Med cria páginas, campanhas e operações de captação para
                 negócios da saúde que desejam aumentar agendamentos, fortalecer a
                 marca e transmitir confiança em cada ponto de contato.
@@ -225,24 +226,24 @@ const ClinicasMedicas = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-7 py-4 text-base font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]">
-                  
+
                   Solicitar estratégia
                   <ArrowRight className="h-4 w-4" />
                 </a>
                 <a
                   href="#solucoes"
                   className="inline-flex items-center justify-center rounded-full border border-border bg-card px-7 py-4 text-base font-semibold text-primary transition-colors duration-200 hover:border-gold hover:text-gold">
-                  
+
                   Ver soluções para saúde
                 </a>
               </div>
 
               <div className="mt-12 grid gap-4 sm:grid-cols-3">
                 {numbers.map((item) =>
-                <div
-                  key={item.label}
-                  className="rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm">
-                  
+                  <div
+                    key={item.label}
+                    className="rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm">
+
                     <div className="text-3xl font-display font-bold text-gold">
                       {item.value}
                     </div>
@@ -264,7 +265,7 @@ const ClinicasMedicas = () => {
                   alt="Médico profissional de braços cruzados"
                   className="w-full h-auto object-cover"
                   loading="eager" />
-                
+
               </div>
             </div>
           </div>
@@ -290,10 +291,10 @@ const ClinicasMedicas = () => {
 
               <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
                 {audiences.map((item) =>
-                <div
-                  key={item}
-                  className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 text-sm font-medium text-primary-foreground/85 shadow-sm">
-                  
+                  <div
+                    key={item}
+                    className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 p-5 text-sm font-medium text-primary-foreground/85 shadow-sm">
+
                     {item}
                   </div>
                 )}
@@ -315,10 +316,10 @@ const ClinicasMedicas = () => {
 
             <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {services.map((service) =>
-              <article
-                key={service.title}
-                className="rounded-[1.5rem] border border-border/70 bg-card p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-                
+                <article
+                  key={service.title}
+                  className="rounded-[1.5rem] border border-border/70 bg-card p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
                     <service.icon className="h-6 w-6" />
                   </div>
@@ -352,10 +353,10 @@ const ClinicasMedicas = () => {
 
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
               {specialties.map((item) =>
-              <div
-                key={item}
-                className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 px-4 py-5 shadow-sm flex items-center min-h-[72px]">
-                
+                <div
+                  key={item}
+                  className="rounded-[1.5rem] border border-primary-foreground/15 bg-primary-foreground/10 px-4 py-5 shadow-sm flex items-center min-h-[72px]">
+
                   <div className="flex items-center gap-3 w-full">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
                       <CheckCircle2 className="h-5 w-5" />
@@ -386,10 +387,10 @@ const ClinicasMedicas = () => {
 
             <div className="space-y-4">
               {processSteps.map((step, index) =>
-              <div
-                key={step}
-                className="flex items-start gap-4 rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm">
-                
+                <div
+                  key={step}
+                  className="flex items-start gap-4 rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm">
+
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary-foreground">
                     {index + 1}
                   </div>
@@ -412,10 +413,10 @@ const ClinicasMedicas = () => {
             </div>
             <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
               {pillars.map((item) =>
-              <article
-                key={item.title}
-                className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-7 shadow-sm">
-                
+                <article
+                  key={item.title}
+                  className="rounded-[1.75rem] border border-primary-foreground/15 bg-primary-foreground/10 p-7 shadow-sm">
+
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold">
                     <item.icon className="h-6 w-6" />
                   </div>
@@ -476,14 +477,14 @@ const ClinicasMedicas = () => {
 
             <div className="mt-12 grid gap-6 lg:grid-cols-3">
               {testimonials.map((item) =>
-              <article
-                key={item.name}
-                className="rounded-[1.75rem] border border-border/70 bg-card p-8 shadow-sm">
-                
+                <article
+                  key={item.name}
+                  className="rounded-[1.75rem] border border-border/70 bg-card p-8 shadow-sm">
+
                   <div className="flex gap-1 text-gold">
                     {Array.from({ length: 5 }).map((_, index) =>
-                  <Star key={index} className="h-4 w-4 fill-current" />
-                  )}
+                      <Star key={index} className="h-4 w-4 fill-current" />
+                    )}
                   </div>
                   <p className="mt-5 text-base leading-8 text-foreground/85">
                     “{item.text}”
@@ -518,14 +519,14 @@ const ClinicasMedicas = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-4 text-base font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]">
-                  
+
                   <PhoneCall className="h-4 w-4" />
                   Falar com especialista
                 </a>
                 <a
                   href="#"
                   className="inline-flex items-center justify-center rounded-full border border-primary-foreground/15 px-8 py-4 text-base font-semibold text-primary-foreground transition-colors duration-200 hover:border-gold hover:text-gold-light">
-                  
+
                   Voltar ao topo
                 </a>
               </div>
