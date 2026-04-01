@@ -807,7 +807,9 @@ const Odontologia = () => {
               </span>
               <div className="flex items-center gap-3">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/avelonmed/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Instagram"
                   className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center text-primary-foreground/60 hover:bg-gold hover:text-primary-foreground transition-all duration-200"
                 >
