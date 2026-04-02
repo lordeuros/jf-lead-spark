@@ -555,11 +555,9 @@ const ClinicasMedicas = () => {
 
             <div className="flex flex-col gap-3">
               <span className="text-sm font-semibold uppercase tracking-wider text-gold">Links</span>
-              {navItems.map((item) => (
-                <a key={item.href} href={item.href} className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
-                  {item.label}
-                </a>
-              ))}
+              <a href="/odonto" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
+                Odontologia
+              </a>
             </div>
 
             <div className="flex flex-col gap-4">
