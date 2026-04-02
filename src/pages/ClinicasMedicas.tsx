@@ -39,7 +39,9 @@ const navItems = [
   { label: "Especialidades", href: "#especialidades" },
   { label: "Processo", href: "#processo" },
   { label: "Resultados", href: "#resultados" },
-  { label: "Contato", href: "#contato-clinicas" }];
+  { label: "Contato", href: "#contato-clinicas" },
+  { label: "Odontologia", href: "/odonto" },
+];
 
 
 const services = [

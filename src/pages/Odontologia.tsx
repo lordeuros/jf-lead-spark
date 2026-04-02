@@ -46,6 +46,7 @@ const navItems = [
   { label: "Resultados", href: "#resultados-odonto" },
   { label: "Método", href: "#metodo-odonto" },
   { label: "Contato", href: "#contato-odonto" },
+  { label: "Clínicas Médicas", href: "/" },
 ];
 
 const services = [
