@@ -764,7 +764,7 @@ const Odontologia = () => {
           <div className="flex flex-col md:flex-row items-start justify-between gap-10">
             <div className="flex flex-col gap-4">
               <a
-                href="/odontologia"
+                href="/odonto"
                 className="flex items-center gap-3 text-primary-foreground"
               >
                 <img
