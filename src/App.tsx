@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ClinicasMedicas from "./pages/ClinicasMedicas.tsx";
 import Odontologia from "./pages/Odontologia.tsx";
+import MarketingDigital from "./pages/MarketingDigital.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -18,6 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<ClinicasMedicas />} />
           <Route path="/odonto" element={<Odontologia />} />
+          <Route path="/marketing-digital" element={<MarketingDigital />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

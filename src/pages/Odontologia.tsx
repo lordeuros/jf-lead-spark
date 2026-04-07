@@ -47,6 +47,7 @@ const navItems = [
   { label: "Método", href: "#metodo-odonto" },
   { label: "Contato", href: "#contato-odonto" },
   { label: "Clínicas Médicas", href: "/" },
+  { label: "Marketing Digital", href: "/marketing-digital" },
 ];
 
 const services = [
