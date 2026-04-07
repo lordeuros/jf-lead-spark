@@ -21,6 +21,8 @@ import {
   Zap,
 } from "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
+import mktStrategyMockup from "@/assets/mkt-strategy-mockup.jpg";
+import mktMethodAv3 from "@/assets/mkt-method-av3.jpg";
 import partnerHomeAngels from "@/assets/partner-homeangels.png";
 import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
 import partnerOdontoplus from "@/assets/partner-odontoplus.png";
@@ -37,7 +39,6 @@ const navItems = [
   { label: "Diferenciais", href: "#diferenciais-mkt" },
   { label: "Contato", href: "#contato-mkt" },
   { label: "Clínicas Médicas", href: "/" },
-  { label: "Odontologia", href: "/odonto" },
 ];
 
 const services = [
@@ -250,11 +251,15 @@ const MarketingDigital = () => {
               <div className="absolute -left-6 top-12 h-40 w-40 rounded-full bg-gold/10 blur-3xl" />
               <div className="absolute -right-8 bottom-8 h-48 w-48 rounded-full bg-accent/10 blur-3xl" />
 
-              <div className="relative rounded-[2rem] border border-border/70 bg-primary overflow-hidden shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)] p-10 md:p-14">
-                <div className="flex flex-col items-center text-center gap-6">
-                  <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gold/10">
-                    <TrendingUp className="h-10 w-10 text-gold" />
-                  </div>
+              <div className="relative rounded-[2rem] border border-border/70 bg-primary overflow-hidden shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
+                <img
+                  src={mktStrategyMockup}
+                  alt="Mockup de celular e notebook exibindo redes sociais e dashboards de marketing"
+                  className="w-full rounded-t-[2rem] object-cover"
+                  width={1024}
+                  height={768}
+                />
+                <div className="flex flex-col items-center text-center gap-4 p-8 md:p-10">
                   <h2 className="text-2xl font-display font-bold text-primary-foreground sm:text-3xl">
                     Estratégia que gera resultado
                   </h2>
@@ -326,7 +331,18 @@ const MarketingDigital = () => {
                 gerar aprendizado, ajuste e evolução contínua.
               </p>
 
-              <div className="mt-8 rounded-[1.5rem] border border-gold/20 bg-gold/5 p-6">
+              <div className="mt-8 rounded-[1.5rem] overflow-hidden border border-gold/20">
+                <img
+                  src={mktMethodAv3}
+                  alt="Diagrama do método AV3 — Atrair, Validar, Vender"
+                  className="w-full object-cover"
+                  loading="lazy"
+                  width={800}
+                  height={800}
+                />
+              </div>
+
+              <div className="mt-6 rounded-[1.5rem] border border-gold/20 bg-gold/5 p-6">
                 <div className="flex items-center gap-3 text-gold font-semibold text-sm">
                   <CheckCircle2 className="h-5 w-5" />
                   Aplicado com sucesso em mais de 120 projetos
