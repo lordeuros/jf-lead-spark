@@ -41,6 +41,7 @@ const navItems = [
   { label: "Resultados", href: "#resultados" },
   { label: "Contato", href: "#contato-clinicas" },
   { label: "Odontologia", href: "/odonto" },
+  { label: "Marketing Digital", href: "/marketing-digital" },
 ];
 
 
@@ -557,6 +558,9 @@ const ClinicasMedicas = () => {
               <span className="text-sm font-semibold uppercase tracking-wider text-gold">Links</span>
               <a href="/odonto" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
                 Odontologia
+              </a>
+              <a href="/marketing-digital" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
+                Marketing Digital
               </a>
             </div>
 
