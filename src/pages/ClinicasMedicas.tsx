@@ -40,8 +40,6 @@ const navItems = [
   { label: "Processo", href: "#processo" },
   { label: "Resultados", href: "#resultados" },
   { label: "Contato", href: "#contato-clinicas" },
-  { label: "Odontologia", href: "/odonto" },
-  { label: "Marketing Digital", href: "/marketing-digital" },
 ];
 
 
