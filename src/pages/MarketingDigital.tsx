@@ -130,18 +130,18 @@ const numbers = [
 
 const testimonials = [
   {
-    name: "Carlos Eduardo",
-    role: "CEO — Distribuidora Nacional",
+    name: "Lucas",
+    role: "Mentoria para Concursos",
     text: "A Avelon estruturou toda nossa presença digital do zero. Em 3 meses, nosso site se tornou o principal canal de captação de novos clientes.",
   },
   {
-    name: "Fernanda Lima",
-    role: "Diretora — Escritório de Advocacia",
+    name: "Fernanda",
+    role: "Fábrica de Sorvetes",
     text: "Profissionalismo e estratégia de verdade. Os resultados em SEO e tráfego pago superaram o que agências anteriores entregaram em um ano.",
   },
   {
     name: "Roberto Alves",
-    role: "Fundador — Rede de Franquias",
+    role: "Médico Especialista em Emagrecimento",
     text: "A equipe entende de negócio, não só de marketing. Isso faz toda a diferença na qualidade da estratégia e nos resultados.",
   },
 ];
@@ -194,8 +194,8 @@ const MarketingDigital = () => {
 
       <main>
         {/* Hero */}
-        <section className="pt-8 pb-16 md:pt-12 md:pb-24 overflow-hidden bg-background">
-          <div className="container mx-auto grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
+        <section className="pt-8 pb-16 md:pt-12 md:pb-20 overflow-hidden bg-background">
+          <div className="container mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold">
                 <Rocket className="h-4 w-4" />
@@ -317,21 +317,23 @@ const MarketingDigital = () => {
 
         {/* Method - AV3 System */}
         <section id="metodo-mkt" className="py-14 md:py-20 bg-background">
-          <div className="container mx-auto grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div>
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-10">
               <span className="text-sm font-semibold uppercase tracking-[0.24em] text-gold">
                 Nosso método
               </span>
-              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl lg:text-5xl">
+              <h2 className="mt-4 text-3xl font-display font-bold text-primary sm:text-4xl">
                 AV3 System — Atrair. Validar. Vender.
               </h2>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
+              <p className="mt-4 mx-auto max-w-2xl text-base leading-7 text-muted-foreground">
                 Um processo estruturado que transforma presença digital em
                 operação de captação previsível. Cada etapa é construída para
                 gerar aprendizado, ajuste e evolução contínua.
               </p>
+            </div>
 
-              <div className="mt-8 rounded-[1.5rem] overflow-hidden border border-gold/20">
+            <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
+              <div className="rounded-[1.5rem] overflow-hidden border border-gold/20 max-w-md mx-auto lg:mx-0">
                 <img
                   src={mktMethodAv3}
                   alt="Diagrama do método AV3 — Atrair, Validar, Vender"
@@ -342,31 +344,31 @@ const MarketingDigital = () => {
                 />
               </div>
 
-              <div className="mt-6 rounded-[1.5rem] border border-gold/20 bg-gold/5 p-6">
-                <div className="flex items-center gap-3 text-gold font-semibold text-sm">
-                  <CheckCircle2 className="h-5 w-5" />
-                  Aplicado com sucesso em mais de 120 projetos
-                </div>
+              <div className="space-y-4">
+                {methodSteps.map((item, index) => (
+                  <div
+                    key={item.step}
+                    className="flex items-start gap-4 rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm"
+                  >
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary-foreground">
+                      {index + 1}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary">{item.step}</p>
+                      <p className="mt-1 text-sm leading-7 text-muted-foreground">
+                        {item.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <div className="space-y-4">
-              {methodSteps.map((item, index) => (
-                <div
-                  key={item.step}
-                  className="flex items-start gap-4 rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm"
-                >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold text-sm font-bold text-primary-foreground">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-primary">{item.step}</p>
-                    <p className="mt-1 text-sm leading-7 text-muted-foreground">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
-              ))}
+            <div className="mt-8 rounded-[1.5rem] border border-gold/20 bg-gold/5 p-5 text-center">
+              <div className="flex items-center justify-center gap-3 text-gold font-semibold text-sm">
+                <CheckCircle2 className="h-5 w-5" />
+                Aplicado com sucesso em mais de 120 projetos
+              </div>
             </div>
           </div>
         </section>
