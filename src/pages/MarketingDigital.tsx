@@ -559,6 +559,9 @@ const MarketingDigital = () => {
               <a href="/odonto" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
                 Odontologia
               </a>
+              <a href="/criacao-de-sites" className="text-sm text-primary-foreground/60 hover:text-gold transition-colors duration-200">
+                Criação de Sites
+              </a>
             </div>
 
             <div className="flex flex-col gap-4">
