@@ -48,6 +48,7 @@ const navItems = [
   { label: "Contato", href: "#contato-odonto" },
   { label: "Clínicas Médicas", href: "/" },
   { label: "Marketing Digital", href: "/marketing-digital" },
+  { label: "Criação de Sites", href: "/criacao-de-sites" },
 ];
 
 const services = [
