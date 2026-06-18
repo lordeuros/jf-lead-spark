@@ -23,7 +23,7 @@ import {
   Zap,
 } from "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
-import sitesHeroMockup from "@/assets/sites-hero-mockup.jpg";
+import sitesHeroMockup from "@/assets/sites-hero-mockup-new.jpg";
 import partnerHomeAngels from "@/assets/partner-homeangels.png";
 import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
 import partnerOdontoplus from "@/assets/partner-odontoplus.png";
