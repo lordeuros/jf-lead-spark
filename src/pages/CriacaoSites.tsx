@@ -23,7 +23,7 @@ import {
   Zap,
 } from "lucide-react";
 import logo from "@/assets/avelon-med-logo.png";
-import sitesHeroMockup from "@/assets/sites-hero-mockup-new.jpg";
+import sitesHeroAsset from "@/assets/sites-hero-user.png.asset.json";
 import partnerHomeAngels from "@/assets/partner-homeangels.png";
 import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
 import partnerOdontoplus from "@/assets/partner-odontoplus.png";
@@ -254,8 +254,8 @@ const CriacaoSites = () => {
 
               <div className="relative rounded-[2rem] border border-border/70 bg-primary overflow-hidden shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
                 <img
-                  src={sitesHeroMockup}
-                  alt="Mockup de laptop e smartphone exibindo sites profissionais responsivos"
+                  src={sitesHeroAsset.url}
+                  alt="Mockup de laptop, tablet e smartphone exibindo sites profissionais responsivos"
                   className="w-full rounded-t-[2rem] object-cover"
                   width={1024}
                   height={768}
