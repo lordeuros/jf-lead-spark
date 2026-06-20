@@ -123,11 +123,6 @@ const differentials = [
   },
 ];
 
-const numbers = [
-  { value: "+80", label: "sites entregues em diversos segmentos" },
-  { value: "5.0★", label: "avaliação média de satisfação dos clientes" },
-  { value: "7 dias", label: "para entrega de sites one page" },
-];
 
 const testimonials = [
   {
@@ -231,21 +226,6 @@ const CriacaoSites = () => {
                 </a>
               </div>
 
-              <div className="mt-12 grid gap-4 sm:grid-cols-3">
-                {numbers.map((item) => (
-                  <div
-                    key={item.label}
-                    className="rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm"
-                  >
-                    <div className="text-3xl font-display font-bold text-gold">
-                      {item.value}
-                    </div>
-                    <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                      {item.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div className="relative">
