@@ -123,11 +123,6 @@ const differentials = [
   },
 ];
 
-const numbers = [
-  { value: "+80", label: "sites entregues em diversos segmentos" },
-  { value: "5.0★", label: "avaliação média de satisfação dos clientes" },
-  { value: "7 dias", label: "para entrega de sites one page" },
-];
 
 const testimonials = [
   {
