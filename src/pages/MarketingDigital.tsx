@@ -43,6 +43,12 @@ const navItems = [
 
 const services = [
   {
+    icon: Instagram,
+    title: "Social Media — Instagram",
+    description:
+      "Cuidamos do seu Instagram do início ao fim: criação de conteúdo, design de posts e stories, copy persuasiva e interação com sua audiência para transformar seguidores em clientes.",
+  },
+  {
     icon: Monitor,
     title: "Criação de sites",
     description:
