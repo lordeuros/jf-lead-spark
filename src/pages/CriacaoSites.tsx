@@ -254,7 +254,7 @@ const CriacaoSites = () => {
 
               <div className="relative rounded-[2rem] border border-border/70 bg-primary overflow-hidden shadow-[0_24px_80px_-32px_hsla(var(--primary),0.18)]">
                 <img
-                  src={sitesHeroAsset.url}
+                  src={sitesHero}
                   alt="Mockup de laptop, tablet e smartphone exibindo sites profissionais responsivos"
                   className="w-full rounded-t-[2rem] object-cover"
                   width={1024}
