@@ -43,6 +43,12 @@ const navItems = [
 
 const services = [
   {
+    icon: Instagram,
+    title: "Social Media — Instagram",
+    description:
+      "Cuidamos do seu Instagram do início ao fim: criação de conteúdo, design de posts e stories, copy persuasiva e interação com sua audiência para transformar seguidores em clientes.",
+  },
+  {
     icon: Monitor,
     title: "Criação de sites",
     description:
@@ -193,6 +199,35 @@ const MarketingDigital = () => {
       </header>
 
       <main>
+        {/* Social Media — Featured Service */}
+        <section className="py-10 md:py-14 bg-gradient-to-r from-primary via-primary to-accent/20 border-b border-gold/20">
+          <div className="container mx-auto max-w-5xl text-center">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-6">
+              <Instagram className="h-4 w-4" />
+              Serviço em destaque
+            </div>
+            <h2 className="text-2xl font-display font-bold text-primary-foreground sm:text-3xl lg:text-4xl">
+              Social Media — Cuidamos do seu <span className="text-gold">Instagram</span>
+            </h2>
+            <p className="mt-4 mx-auto max-w-2xl text-base leading-7 text-primary-foreground/70">
+              Gestão completa do seu perfil: criação de conteúdo, design de posts,
+              stories estratégicos, legenda com copy persuasiva e interação diária
+              com sua audiência.
+            </p>
+            <div className="mt-8">
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
+              >
+                <MessageCircle className="h-4 w-4" />
+                Quero crescer no Instagram
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Hero */}
         <section className="pt-8 pb-16 md:pt-12 md:pb-20 overflow-hidden bg-background">
           <div className="container mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
