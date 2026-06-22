@@ -238,7 +238,7 @@ const MarketingDigital = () => {
               </span>
 
               <h1 className="mt-6 max-w-3xl text-3xl font-display font-bold leading-[1.08] tracking-[-0.02em] text-primary sm:text-4xl lg:text-5xl xl:text-[3.6rem]">
-                Sua empresa precisa de <span className="text-gold">clientes</span>, não apenas de presença online
+                Marketing digital para <span className="text-gold">atrair clientes</span> e gerar crescimento
               </h1>
 
               <p className="mt-5 max-w-xl text-base leading-7 text-muted-foreground sm:text-lg">
