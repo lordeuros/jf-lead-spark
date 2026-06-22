@@ -128,10 +128,10 @@ const differentials = [
   },
 ];
 
-const numbers = [
-  { value: "+120", label: "projetos digitais entregues com resultado" },
-  { value: "5.0★", label: "avaliação média de satisfação dos clientes" },
-  { value: "48h", label: "para diagnóstico estratégico inicial" },
+const channels = [
+  { icon: Instagram, name: "Instagram", label: "Criamos conteúdo e gestão profissional do seu perfil" },
+  { icon: Search, name: "Google", label: "Campanhas e posicionamento para quem busca no Google" },
+  { icon: MessageCircle, name: "WhatsApp", label: "Automação e atendimento que converte leads em agendamentos" },
 ];
 
 const testimonials = [
@@ -266,15 +266,18 @@ const MarketingDigital = () => {
               </div>
 
               <div className="mt-12 grid gap-4 sm:grid-cols-3">
-                {numbers.map((item) => (
+                {channels.map((item) => (
                   <div
-                    key={item.label}
+                    key={item.name}
                     className="rounded-[1.5rem] border border-border/70 bg-card p-5 shadow-sm"
                   >
-                    <div className="text-3xl font-display font-bold text-gold">
-                      {item.value}
+                    <div className="flex items-center gap-3">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gold/10 text-gold">
+                        <item.icon className="h-5 w-5" />
+                      </div>
+                      <span className="text-lg font-display font-bold text-primary">{item.name}</span>
                     </div>
-                    <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                    <p className="mt-3 text-sm leading-6 text-muted-foreground">
                       {item.label}
                     </p>
                   </div>
