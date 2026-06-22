@@ -133,10 +133,10 @@ const processSteps = [
   "Otimização recorrente com base em dados e qualidade dos contatos"];
 
 
-const numbers = [
-  { value: "+43%", label: "mais contatos qualificados em projetos otimizados" },
-  { value: "5.0★", label: "percepção média de atendimento e confiança" },
-  { value: "24h", label: "prazo inicial para diagnóstico estratégico" }];
+const channels = [
+  { icon: Instagram, name: "Instagram", label: "Criamos conteúdo e gestão profissional do seu perfil" },
+  { icon: Search, name: "Google", label: "Campanhas e posicionamento para quem busca no Google" },
+  { icon: MessageCircle, name: "WhatsApp", label: "Automação e atendimento que converte leads em agendamentos" }];
 
 
 const testimonials = [
