@@ -200,7 +200,7 @@ const MarketingDigital = () => {
 
       <main>
         {/* Social Media — Featured Service */}
-        <section className="py-10 md:py-14 bg-gradient-to-r from-primary via-primary to-accent/20 border-b border-gold/20">
+        <section className="py-10 md:py-14 bg-primary border-b border-gold/20">
           <div className="container mx-auto max-w-5xl text-center">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-gold mb-6">
               <Instagram className="h-4 w-4" />
