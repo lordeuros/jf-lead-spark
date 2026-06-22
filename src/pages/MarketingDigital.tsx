@@ -128,10 +128,10 @@ const differentials = [
   },
 ];
 
-const numbers = [
-  { value: "+120", label: "projetos digitais entregues com resultado" },
-  { value: "5.0★", label: "avaliação média de satisfação dos clientes" },
-  { value: "48h", label: "para diagnóstico estratégico inicial" },
+const channels = [
+  { icon: Instagram, name: "Instagram", label: "Criamos conteúdo e gestão profissional do seu perfil" },
+  { icon: Search, name: "Google", label: "Campanhas e posicionamento para quem busca no Google" },
+  { icon: MessageCircle, name: "WhatsApp", label: "Automação e atendimento que converte leads em agendamentos" },
 ];
 
 const testimonials = [

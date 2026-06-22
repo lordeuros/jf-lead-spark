@@ -124,10 +124,10 @@ const specialties = [
   { name: "Harmonização Orofacial", benefit: "Mercado em crescimento explosivo" },
 ];
 
-const numbers = [
-  { value: "+43%", label: "mais pacientes em 60 dias com nossas estratégias" },
-  { value: "R$27", label: "custo médio por lead qualificado em odontologia" },
-  { value: "3x", label: "mais agendamentos comparado a métodos tradicionais" },
+const channels = [
+  { icon: Instagram, name: "Instagram", label: "Criamos conteúdo e gestão profissional do seu perfil" },
+  { icon: Search, name: "Google", label: "Campanhas e posicionamento para quem busca no Google" },
+  { icon: MessageCircle, name: "WhatsApp", label: "Automação e atendimento que converte leads em agendamentos" },
 ];
 
 const caseStudy = {
