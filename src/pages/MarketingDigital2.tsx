@@ -159,7 +159,7 @@ const MarketingDigital2 = () => {
         <div className="container mx-auto flex items-center justify-between gap-6 py-4">
           <a href="/marketing-digital2" className="flex items-center gap-3">
             <img
-              src={logo}
+              src={logo.url}
               alt="Logo Avelon Marketing"
               className="h-14 w-14 rounded-lg object-cover shadow-md"
             />
@@ -573,7 +573,7 @@ const MarketingDigital2 = () => {
             <div className="flex flex-col gap-4">
               <a href="/marketing-digital2" className="flex items-center gap-3 text-white">
                 <img
-                  src={logo}
+                  src={logo.url}
                   alt="Logo Avelon Marketing"
                   className="h-12 w-12 rounded-lg object-cover shadow-lg"
                   loading="lazy"
