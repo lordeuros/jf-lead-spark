@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import ClinicasMedicas from "./pages/ClinicasMedicas.tsx";
 import Odontologia from "./pages/Odontologia.tsx";
 import MarketingDigital from "./pages/MarketingDigital.tsx";
+import MarketingDigital2 from "./pages/MarketingDigital2.tsx";
 import CriacaoSites from "./pages/CriacaoSites.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
