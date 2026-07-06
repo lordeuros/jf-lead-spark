@@ -21,7 +21,8 @@ import {
   Zap,
 } from "lucide-react";
 import logo from "@/assets/avelon-marketing-logo-white.jpg.asset.json";
-import mktStrategyMockup from "@/assets/mkt-strategy-mockup.jpg";
+import mktStrategyMockup from "@/assets/mkt2-hero-mockup.png.asset.json";
+import mktInstagramMockup from "@/assets/mkt2-instagram-mockup.png.asset.json";
 import mktMethodAv3 from "@/assets/mkt-method-av3.jpg";
 import partnerHomeAngels from "@/assets/partner-homeangels.png";
 import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
