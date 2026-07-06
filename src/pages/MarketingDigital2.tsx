@@ -291,7 +291,7 @@ const MarketingDigital2 = () => {
 
               <div className="relative rounded-[2rem] border border-border/70 bg-[#0a0a0a] overflow-hidden shadow-[0_24px_80px_-32px_rgba(0,0,0,0.18)]">
                 <img
-                  src={mktStrategyMockup}
+                  src={mktStrategyMockup.url}
                   alt="Mockup de celular e notebook exibindo redes sociais e dashboards de marketing"
                   className="w-full rounded-t-[2rem] object-cover"
                   width={1024}
