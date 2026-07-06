@@ -415,7 +415,7 @@ const MarketingDigital2 = () => {
             <div className="mt-8 rounded-[1.5rem] border border-[#F5811F]/20 bg-[#F5811F]/5 p-5 text-center">
               <div className="flex items-center justify-center gap-3 text-[#F5811F] font-semibold text-sm">
                 <CheckCircle2 className="h-5 w-5" />
-                Aplicado com sucesso em mais de 120 projetos
+                Método validado e aplicado com sucesso em diversos clientes de diferentes nichos
               </div>
             </div>
           </div>
