@@ -22,6 +22,7 @@ const App = () => (
           <Route path="/" element={<ClinicasMedicas />} />
           <Route path="/odonto" element={<Odontologia />} />
           <Route path="/marketing-digital" element={<MarketingDigital />} />
+          <Route path="/marketing-digital2" element={<MarketingDigital2 />} />
           <Route path="/criacao-de-sites" element={<CriacaoSites />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
