@@ -270,7 +270,7 @@ const MarketingDigital2 = () => {
                   >
                     <div className="flex items-center gap-3">
                       <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#F5811F]/10 text-[#F5811F]">
-                        <item.icon className="h-5 w-5" />
+                        {item.icon}
                       </div>
                       <span className="text-lg font-display font-bold text-[#0a0a0a]">{item.name}</span>
                     </div>
