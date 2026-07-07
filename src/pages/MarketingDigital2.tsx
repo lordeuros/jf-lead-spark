@@ -383,7 +383,7 @@ const MarketingDigital2 = () => {
             <div className="grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
               <div className="rounded-[1.5rem] overflow-hidden border border-[#F5811F]/20 max-w-md mx-auto lg:mx-0">
                 <img
-                  src={mktMethodAv3}
+                  src={mktMethodAv3.url}
                   alt="Diagrama do método AV3 — Atrair, Validar, Vender"
                   className="w-full object-cover"
                   loading="lazy"
