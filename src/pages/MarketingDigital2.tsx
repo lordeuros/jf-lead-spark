@@ -199,45 +199,6 @@ const MarketingDigital2 = () => {
       </header>
 
       <main>
-        {/* Social Media — Featured Service */}
-        <section className="py-10 md:py-14 bg-[#0a0a0a] border-b border-[#F5811F]/20">
-          <div className="container mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[1fr_1fr]">
-            <div className="text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#F5811F]/30 bg-[#F5811F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#F5811F] mb-6">
-                <Instagram className="h-4 w-4" />
-                Serviço em destaque
-              </div>
-              <h2 className="text-2xl font-display font-bold text-white sm:text-3xl lg:text-4xl">
-                Social Media — Cuidamos do seu <span className="text-[#F5811F]">Instagram</span>
-              </h2>
-              <p className="mt-4 max-w-2xl mx-auto lg:mx-0 text-base leading-7 text-white/70">
-                Gestão completa do seu perfil: criação de conteúdo, design de posts,
-                stories estratégicos, legenda com copy persuasiva e interação diária
-                com sua audiência.
-              </p>
-              <div className="mt-8">
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#F5811F] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
-                >
-                  <MessageCircle className="h-4 w-4" />
-                  Quero crescer no Instagram
-                </a>
-              </div>
-            </div>
-            <div className="relative">
-              <img
-                src={mktInstagramMockup.url}
-                alt="Mockups de celular exibindo perfis de Instagram da Avelon Marketing"
-                className="w-full h-auto object-contain"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </section>
-
         {/* Hero */}
         <section className="pt-8 pb-16 md:pt-12 md:pb-20 overflow-hidden bg-background">
           <div className="container mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
@@ -307,11 +268,11 @@ const MarketingDigital2 = () => {
                   width={1024}
                   height={768}
                 />
-                <div className="flex flex-col items-center text-center gap-4 p-8 md:p-10">
-                  <h2 className="text-2xl font-display font-bold text-white sm:text-3xl">
+                <div className="flex flex-col items-center text-center gap-3 px-6 pt-4 pb-6 md:px-8 md:pt-5 md:pb-7">
+                  <h2 className="text-xl font-display font-bold text-white sm:text-2xl">
                     Estratégia que gera resultado
                   </h2>
-                  <p className="text-white/60 text-base leading-7 max-w-sm">
+                  <p className="text-white/60 text-sm leading-6 max-w-sm">
                     Não fazemos marketing genérico. Cada projeto é construído com
                     base no seu mercado, seus objetivos e no comportamento do seu
                     cliente.
@@ -325,6 +286,46 @@ const MarketingDigital2 = () => {
             </div>
           </div>
         </section>
+
+        {/* Social Media — Featured Service */}
+        <section className="py-10 md:py-14 bg-[#0a0a0a] border-y border-[#F5811F]/20">
+          <div className="container mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[1fr_1fr]">
+            <div className="text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 rounded-full border border-[#F5811F]/30 bg-[#F5811F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#F5811F] mb-6">
+                <Instagram className="h-4 w-4" />
+                Serviço em destaque
+              </div>
+              <h2 className="text-2xl font-display font-bold text-white sm:text-3xl lg:text-4xl">
+                Social Media — Cuidamos do seu <span className="text-[#F5811F]">Instagram</span>
+              </h2>
+              <p className="mt-4 max-w-2xl mx-auto lg:mx-0 text-base leading-7 text-white/70">
+                Gestão completa do seu perfil: criação de conteúdo, design de posts,
+                stories estratégicos, legenda com copy persuasiva e interação diária
+                com sua audiência.
+              </p>
+              <div className="mt-8">
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#F5811F] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  Quero crescer no Instagram
+                </a>
+              </div>
+            </div>
+            <div className="relative">
+              <img
+                src={mktInstagramMockup.url}
+                alt="Mockups de celular exibindo perfis de Instagram da Avelon Marketing"
+                className="w-full h-auto object-contain"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+
 
         {/* Services */}
         <section id="servicos-mkt" className="py-14 md:py-20 bg-[#0a0a0a] text-white">
