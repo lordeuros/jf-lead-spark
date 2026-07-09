@@ -628,7 +628,7 @@ const MarketingDigital2 = () => {
 <div className="flex flex-col gap-4">
               <span className="text-sm font-semibold uppercase tracking-wider text-[#F5811F]">Redes sociais</span>
               <div className="flex items-center gap-3">
-                <a href="https://www.instagram.com/avelonmed/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:bg-[#F5811F] hover:text-white transition-all duration-200">
+                <a href="https://www.instagram.com/avelonmarketing/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:bg-[#F5811F] hover:text-white transition-all duration-200">
                   <Instagram className="h-4 w-4" />
                 </a>
                 <a href="https://www.instagram.com/avelonmed/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:bg-[#F5811F] hover:text-white transition-all duration-200">
