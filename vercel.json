@@ -2,6 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/__l5e/:path*",
+      "destination": "https://jf-lead-spark.lovable.app/__l5e/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
