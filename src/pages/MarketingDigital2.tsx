@@ -354,14 +354,14 @@ const MarketingDigital2 = () => {
         </section>
 
         {/* Google Business — Social Proof */}
-        <section className="py-10 md:py-14 bg-[#0a0a0a] border-y border-white/10 overflow-hidden">
+        <section className="py-10 md:py-14 bg-background border-y border-border/70 overflow-hidden">
           <div className="container mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[1fr_1fr]">
             <div className="relative order-2 lg:order-1">
               <div className="absolute -left-8 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-[#F5811F]/10 blur-3xl" />
               <img
                 src={googleClients.url}
                 alt="Clientes Avelon Marketing com avaliações 5.0 no Google Business"
-                className="relative w-full rounded-[1.5rem] border border-white/10 shadow-2xl shadow-black/40"
+                className="relative w-full rounded-[1.5rem] border border-border/70 shadow-2xl shadow-black/10"
                 loading="lazy"
               />
             </div>
@@ -370,10 +370,10 @@ const MarketingDigital2 = () => {
                 <Search className="h-4 w-4" />
                 Google Business Profile
               </div>
-              <h2 className="text-2xl font-display font-bold text-white sm:text-3xl lg:text-4xl">
+              <h2 className="text-2xl font-display font-bold text-[#0a0a0a] sm:text-3xl lg:text-4xl">
                 Você na frente do seu <span className="text-[#F5811F]">concorrente no Google</span>
               </h2>
-              <p className="mt-4 max-w-xl text-base leading-7 text-white/70">
+              <p className="mt-4 max-w-xl text-base leading-7 text-muted-foreground">
                 Posicionamos sua empresa no Google Business Profile com estratégia, conteúdo e gestão de avaliações. O resultado é mais visibilidade, mais autoridade e mais clientes chegando até você.
               </p>
               <ul className="mt-6 space-y-3">
@@ -382,7 +382,7 @@ const MarketingDigital2 = () => {
                   "Avaliações 5 estrelas que geram confiança imediata",
                   "Gestão de respostas e conteúdo profissional",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sm text-white/80">
+                  <li key={item} className="flex items-start gap-3 text-sm text-[#0a0a0a]/80">
                     <CheckCircle2 className="h-5 w-5 shrink-0 text-[#F5811F]" />
                     {item}
                   </li>
