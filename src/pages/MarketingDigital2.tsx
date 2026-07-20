@@ -24,6 +24,7 @@ import logo from "@/assets/avelon-marketing-logo-white.jpg.asset.json";
 import mktStrategyMockup from "@/assets/mkt2-hero-mockup-cropped.png.asset.json";
 import mktInstagramMockup from "@/assets/mkt2-instagram-mockup.png.asset.json";
 import mktMethodAv3 from "@/assets/mkt2-av3-method.png.asset.json";
+import googleClients from "@/assets/avelon-google-clients.png.asset.json";
 import partnerHomeAngels from "@/assets/partner-homeangels.png";
 import partnerClinicaVida from "@/assets/partner-clinica-vida.png";
 import partnerOdontoplus from "@/assets/partner-odontoplus.png";
@@ -308,6 +309,56 @@ const MarketingDigital2 = () => {
                     Método AV3 — Atrair. Validar. Vender.
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Google Business — Social Proof */}
+        <section className="py-10 md:py-14 bg-[#0a0a0a] border-y border-white/10 overflow-hidden">
+          <div className="container mx-auto max-w-6xl grid items-center gap-10 lg:grid-cols-[1fr_1fr]">
+            <div className="relative order-2 lg:order-1">
+              <div className="absolute -left-8 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-[#F5811F]/10 blur-3xl" />
+              <img
+                src={googleClients.url}
+                alt="Clientes Avelon Marketing com avaliações 5.0 no Google Business"
+                className="relative w-full rounded-[1.5rem] border border-white/10 shadow-2xl shadow-black/40"
+                loading="lazy"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <div className="inline-flex items-center gap-2 rounded-full border border-[#F5811F]/30 bg-[#F5811F]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#F5811F] mb-6">
+                <Search className="h-4 w-4" />
+                Google Business Profile
+              </div>
+              <h2 className="text-2xl font-display font-bold text-white sm:text-3xl lg:text-4xl">
+                Você na frente do seu <span className="text-[#F5811F]">concorrente no Google</span>
+              </h2>
+              <p className="mt-4 max-w-xl text-base leading-7 text-white/70">
+                Posicionamos sua empresa no Google Business Profile com estratégia, conteúdo e gestão de avaliações. O resultado é mais visibilidade, mais autoridade e mais clientes chegando até você.
+              </p>
+              <ul className="mt-6 space-y-3">
+                {[
+                  "Perfil otimizado para aparecer nas primeiras posições",
+                  "Avaliações 5 estrelas que geram confiança imediata",
+                  "Gestão de respostas e conteúdo profissional",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-white/80">
+                    <CheckCircle2 className="h-5 w-5 shrink-0 text-[#F5811F]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8">
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#F5811F] px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:brightness-110 active:scale-[0.97]"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  Quero aparecer no Google
+                </a>
               </div>
             </div>
           </div>
